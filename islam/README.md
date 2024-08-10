@@ -52,7 +52,6 @@
   - [Vardığım sonuç](#vardığım-sonuç)
   - [İlgili Kur’an ayeti](#i̇lgili-kuran-ayeti)
 
-
 # Bilim dışı ayetler
 
 Bilimsel olarak doğru olmayan ayetler.
@@ -61,19 +60,19 @@ Bilimsel olarak doğru olmayan ayetler.
 
 Ayet bel ile kaburga kemikleri arasından diyor tıp ise testislerden diyor.
 
-> "Öyleyse insan neden yaratıldığına bir baksın." [86:5](https://acikkuran.com/86/5)
+> "Öyleyse insan neden yaratıldığına bir baksın." [86\5](https://acikkuran.com/86/5)
 
-> "Fışkırıp çıkan bir sudan yaratıldı." [86:6](https://acikkuran.com/86/6)
+> "Fışkırıp çıkan bir sudan yaratıldı." [86\6](https://acikkuran.com/86/6)
 
-> "Bu su, bel ile kaburga kemikleri arasından çıkar." [86:7](https://acikkuran.com/86/7)
+> "Bu su, bel ile kaburga kemikleri arasından çıkar." [86\7](https://acikkuran.com/86/7)
 
 ## Cennetin genişliği
 
 Cennet tarif edilirken "eni, gökle yerin genişliği kadar", "genişliği göklerle yer arası kadar" ifadeleri geçiyor. Yerden kastedilen Dünya gezegeni olduğuna göre, Dünya da diğer gök cisimlerinden biri olduğuna göre "gök ile yer kadar" demek anlamsız bir ifadedir. Hatta bu ifadeden yerin altta, uzayın ise üstte algılandığı anlaşılmaktadır.
 
-> "Rabbinizin bağışına, **genişliği göklerle yer arası kadar** olan ve Allah'a karşı gelmekten sakınanlar için hazırlanmış bulunan cennete koşun." [3:133](https://acikkuran.com/3/133)
+> "Rabbinizin bağışına, **genişliği göklerle yer arası kadar** olan ve Allah'a karşı gelmekten sakınanlar için hazırlanmış bulunan cennete koşun." [3\133](https://acikkuran.com/3/133)
 
-> "Rabbinizden bir bağışlanmaya ve **eni, gökle yerin genişliği kadar olan**, Allah'a ve Resulüne inananlar için hazırlanan cennete... [57:21](https://acikkuran.com/57/21)
+> "Rabbinizden bir bağışlanmaya ve **eni, gökle yerin genişliği kadar olan**, Allah'a ve Resulüne inananlar için hazırlanan cennete... [57\21](https://acikkuran.com/57/21)
 
 ## Evrenin yaratılışı
 
