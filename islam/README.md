@@ -452,7 +452,7 @@ Gaşiye-6 ayetinde cehhennemde sadece dikenli bitki yeneceğini söylenirken Duh
 
 # Namaz ve Namaskar benzerliği
 
-Namaz kelimesi Hindistan çıkışlı olup, Farsça’dan Türkçe’ye geçmiş bir kelimedir. Sanskritçe ve Hintçe’de “Namaste ya da Namaskar”; selamlama, eğilme, saygı ile eğilme, dua etme, yay halinde selamlama anlamlarına gelir. Sanskritçe, eski Hint dillerindendir.[31] Yine Sanskritçe ve Hintçe’de “Surya-Namaskar” ise; Güneş’i selamlama, Güneş’e dua etme, Güneş’e eğilme, Güneş’e yay halinde saygı gösterme anlamlarına gelir. Surya Sanskritçe’de ve Veda dininin Tanrılarından Surya, Güneş anlamına gelmektedir.
+Namaz kelimesi Hindistan çıkışlı olup, Farsça’dan Türkçe’ye geçmiş bir kelimedir. Sanskritçe ve Hintçe’de “Namaste ya da Namaskar”; selamlama, eğilme, saygı ile eğilme, dua etme, yay halinde selamlama anlamlarına gelir. Sanskritçe, eski Hint dillerindendir. Yine Sanskritçe ve Hintçe’de “Surya-Namaskar” ise; Güneş’i selamlama, Güneş’e dua etme, Güneş’e eğilme, Güneş’e yay halinde saygı gösterme anlamlarına gelir. Surya Sanskritçe’de ve Veda dininin Tanrılarından Surya, Güneş anlamına gelmektedir.
 
 ![alt text](https://www.mutlakbilim.net/wp-content/uploads/2018/01/surhnatassd32.jpg)
 
