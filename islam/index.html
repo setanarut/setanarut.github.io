@@ -1,0 +1,1322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+<title>islambu.md</title>
+<style type='text/css'>:root {
+  /* Base Light */
+  --textPrimary: #24292E;
+  --background: #ffffff;
+  --body-border-color: #dfdfdf;
+  --link: #0366d6;
+  --link-highlight: rgba(3, 102, 214, 0.08);
+  --code-background: #f7f7f9;
+  --hr-background: #e3e4e8;
+  --thead-background: #f7f7f9;
+  --thead-border: #e3e4e8;
+  --tr-border: #bfc1c9; /* unused variable */
+  --tr-alt-background: #f7f7f9;
+  --kbd-background: #f7f7f9;
+  --kbd-color: #4b4d58;
+  --kbd-border: #d6d7dc;
+  --blockquote-color: #6a6d7c;
+  --blockquote-border: #e3e4e8;
+  --heading-color: #17181a;
+  --header-bottom-border: #e3e4e8;
+  --h6-color: #6a6d7c;
+  --frame-border: #e3e4e8;
+  --frame-color: #242528;
+  --mention-color: #242528;
+  --email-toggle-color: #4b4d58; /* unused variable */
+  --email-toggle-background: #e3e4e8; /* unused variable */
+  --email-quoted-color: #6a6d7c; /* unused variable */
+  --keyword-color: #9194a1;
+  --code-font: ui-monospace, Menlo, monospace;
+  
+  /* Highlight Light */
+  --hl_Background: #F6F8FA ;
+  --hl_Number: #005cc5 ;
+  --hl_Escape: #032f62 ;
+  --hl_String: #032f62 ;
+  --hl_String_Pre_Processor: #549ef1 ;
+  --hl_Block_Comment: #6a737d ;
+  --hl_Line_Comment: #6a737d ;
+  --hl_Pre_Processor: #d73a49 ; /* #include */
+  --hl_Line_Number:  #52565C ;
+  --hl_Operator: #032f62 ; /* +,-,(){} */
+  --hl_Interpolation:  #79c0ff ;
+  --hl_Keyword-1: #d73a49 ; /* import | func */
+  --hl_Keyword-2: #d73a49 ; /* int | str */
+  --hl_Keyword-3: #24292e ; /* ??? */
+  --hl_Keyword-4: #6f42c1 ; /* ??? */
+  --hl_Keyword-5: #d73a49 ; /* ??? */
+  --hl_Keyword-6: #d73a49 ; /* ??? */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Base Dark */
+  --textPrimary: #c9d1d9;
+  --background: #0d1117;
+  --body-border-color: #31363C;
+  --link: #58a6ff;
+  --link-highlight: rgba(3, 102, 214, 0.08);
+  --code-background: #2f3438;
+  --hr-background: #30363d;
+  --thead-background: #f7f7f9;
+  --thead-border: #3b434b;
+  --tr-border: #3b434b; /* unused variable */
+  --tr-alt-background: #161c23;
+  --kbd-background: #f7f7f9;
+  --kbd-color: #4b4d58;
+  --kbd-border: #050505;
+  --blockquote-color: #8b949e;
+  --blockquote-border: #3D434A;
+  --heading-color: #17181a;
+  --header-bottom-border: #21272c;
+  --h6-color: #6a6d7c;
+  --frame-border: #ff08d6;
+  --frame-color: #242528;
+  --mention-color: #242528;
+  --email-toggle-color: #4b4d58;
+  --email-toggle-background: #e3e4e8;
+  --email-quoted-color: #6a6d7c;
+  --keyword-color: #9194a1;
+  --code-font: ui-monospace, Menlo, monospace;
+
+      /* Highlight Dark */
+  --hl_Background: #161b22 ;
+  --hl_Number: #79c0ff ;
+  --hl_Escape: #a5d6ff ;
+  --hl_String: #549ef1 ;
+  --hl_String_Pre_Processor: #549ef1 ;
+  --hl_Block_Comment: #8b949e ;
+  --hl_Line_Comment: #8b949e ;
+  --hl_Pre_Processor: #FF7B72 ; /* #include */
+  --hl_Line_Number:  #52565C ;
+  --hl_Operator: #79c0ff ; /* +,-,(){} */
+  --hl_Interpolation:  #79c0ff ;
+  --hl_Keyword-1: #FF7B72 ; /* import | func */
+  --hl_Keyword-2: #FF7B72 ; /* int | str */
+  --hl_Keyword-3: #c9d1d9 ; /* ??? */
+  --hl_Keyword-4: #eea8ff ; /* ??? */
+  --hl_Keyword-5: #FF7B72 ; /* ??? */
+  --hl_Keyword-6: #FF7B72 ; /* ??? */
+  }
+}
+
+/*Syntax Highlight*/
+pre.hl	{ background-color: var(--hl_Background);
+}
+.hl.num { color: var(--hl_Number); font-weight: normal;}
+.hl.esc { color: var(--hl_Escape); font-weight: normal;}
+.hl.str { color: var(--hl_String); font-weight: normal;}
+.hl.pps { color: var(--hl_String_Pre_Processor); font-weight: normal;}
+.hl.com { color: var(--hl_Block_Comment); font-weight: normal;}
+.hl.slc { color: var(--hl_Line_Comment); font-weight: normal;}
+.hl.ppc { color: var(--hl_Pre_Processor); font-weight: normal;}
+.hl.lin { color: var(--hl_Line_Number); font-weight: normal;}
+.hl.opt { color: var(--hl_Operator); font-weight: normal;}
+.hl.ipl { color: var(--hl_Interpolation); font-weight: normal;}
+.hl.kwa { color: var(--hl_Keyword-1); font-weight: normal;}
+.hl.kwb { color: var(--hl_Keyword-2); font-weight: normal;}
+.hl.kwc { color: var(--hl_Keyword-3); font-weight: normal;}
+.hl.kwd { color: var(--hl_Keyword-4); font-weight: normal;}
+.hl.kwe { color: var(--hl_Keyword-5); font-weight: normal;}
+.hl.kwf { color: var(--hl_Keyword-6); font-weight: normal;}
+
+
+pre {
+  max-width: 902px;
+}
+* {
+  box-sizing: border-box;
+}
+
+input:disabled {
+  touch-action: none;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji, Segoe UI Emoji;
+}
+
+body {
+  margin: 0;
+  /* padding: 1em; */
+  color: var(--textPrimary);
+  background-color: var(--background);
+}
+
+/* If the window is bigger than 902 pixels, the border will be visible. */
+@media (min-width: 902px) {
+  article {
+    border-radius: 8px;
+    border-width: 1px;  
+    border-style: solid;
+    border-color: var(--body-border-color);
+  }
+}
+
+article {
+  margin: auto;
+  max-width: 902px;
+  font-size: inherit;
+  line-height: 1.5;
+  word-wrap: break-word;
+  padding: 32px;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+  -webkit-tap-highlight-color: var(--link-highlight);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+details summary {
+  outline: 0;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+blockquote {
+  margin: 0;
+}
+
+table, table *, pre {
+  touch-action: pan-x;
+}
+
+.markdown-body ul.contains-task-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+pre, code, kbd {
+  font-size: 1em;
+  font-family: var(--code-font);
+}
+
+.issue-keyword {
+  border-bottom: 1px dotted var(--keyword-color);
+}
+
+.team-mention, .user-mention {
+  font-weight: 600;
+  color: var(--mention-color);
+  white-space: nowrap;
+}
+
+.email-hidden-toggle, .email-hidden-reply {
+  display: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  input[type="checkbox"] {
+    filter: invert(85%) brightness(1.5);
+  }
+}
+/* Fix checkboxes looking cut off when they render larger than the default size */
+input[type="checkbox"] {
+  transform: translate(0px);
+  width: 14px; height: 14px;
+}
+
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 0.18em 0.31em;
+  font-size: 0.7em;
+  line-height: 1.2em;
+  color: var(--kbd-color);
+  vertical-align: middle;
+  background-color: var(--kbd-background);
+  border: 1px solid var(--kbd-border);
+  border-radius: 0.25em;
+  box-shadow: inset 0 -1px 0 var(--kbd-border);
+  margin-right: 2px;
+}
+
+.markdown-body:after, .markdown-body:before {
+  display: table;
+  content: ""
+}
+
+.markdown-body:after {
+  clear: both;
+}
+
+.markdown-body > :first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body > :last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .absent {
+  color: var(--red-600);
+}
+
+.markdown-body .anchor {
+  float: left;
+  padding-right: 4px;
+  margin-left: -20px;
+  line-height: 1;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body blockquote, .markdown-body details, .markdown-body dl, .markdown-body ol, .markdown-body p, .markdown-body pre, .markdown-body table, .markdown-body ul {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body table table {
+    margin-bottom: 0;
+}
+
+.markdown-body hr {
+  height: .25em;
+  padding: 0;
+  margin: 24px 0;
+  background-color: var(--hr-background);
+  border: 0;
+}
+
+.markdown-body blockquote {
+  padding-left: 1em;
+  color: var(--blockquote-color);
+  border-left: .25em solid var(--blockquote-border);
+}
+
+.markdown-body blockquote > :first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.markdown-body h1 .octicon-link, .markdown-body h2 .octicon-link, .markdown-body h3 .octicon-link, .markdown-body h4 .octicon-link, .markdown-body h5 .octicon-link, .markdown-body h6 .octicon-link {
+  color: var(--heading-color);
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor, .markdown-body h2:hover .anchor, .markdown-body h3:hover .anchor, .markdown-body h4:hover .anchor, .markdown-body h5:hover .anchor, .markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link, .markdown-body h2:hover .anchor .octicon-link, .markdown-body h3:hover .anchor .octicon-link, .markdown-body h4:hover .anchor .octicon-link, .markdown-body h5:hover .anchor .octicon-link, .markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 code, .markdown-body h1 tt, .markdown-body h2 code, .markdown-body h2 tt, .markdown-body h3 code, .markdown-body h3 tt, .markdown-body h4 code, .markdown-body h4 tt, .markdown-body h5 code, .markdown-body h5 tt, .markdown-body h6 code, .markdown-body h6 tt {
+  font-size: inherit;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1, .markdown-body h2 {
+  padding-bottom: .3em;
+  border-bottom: 1px solid var(--header-bottom-border);
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  font-size: .85em;
+  color: var(--h6-color);
+}
+
+.markdown-body ol, .markdown-body ul {
+  padding-left: 1.5em;
+}
+
+.markdown-body ol.no-list, .markdown-body ul.no-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.markdown-body ol ol, .markdown-body ol ul, .markdown-body ul ol, .markdown-body ul ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li > p {
+  margin-top: 16px;
+}
+
+.markdown-body li + li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td, .markdown-body table th {
+  padding: 6px 13px;
+  border: 1px solid var(--thead-border);
+}
+
+.markdown-body table tr {
+  background-color: var(--background);
+  border-top: 1px solid var(--tr-border); /* unused variable */
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: var(--tr-alt-background);
+}
+
+.markdown-body table img {
+  background-color: initial;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  height: auto;
+  box-sizing: initial;
+  background-color: var(--background);
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body .emoji {
+  max-width: none;
+  vertical-align: text-top;
+  background-color: initial;
+}
+
+.markdown-body img.emoji {
+    max-width: 18px;
+}
+
+.markdown-body span.frame {
+  display: block;
+  overflow: hidden;
+}
+
+.markdown-body span.frame > span {
+  display: block;
+  float: left;
+  width: auto;
+  padding: 7px;
+  margin: 13px 0 0;
+  overflow: hidden;
+  border: 1px solid var(--frame-border);
+}
+
+.markdown-body span.frame span img {
+  display: block;
+  float: left;
+}
+
+.markdown-body span.frame span span {
+  display: block;
+  padding: 5px 0 0;
+  clear: both;
+  color: var(--frame-color);
+}
+
+.markdown-body span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-center > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.markdown-body span.align-center span img {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.markdown-body span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both;
+}
+
+.markdown-body span.align-right > span {
+  display: block;
+  margin: 13px 0 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body span.align-right span img {
+  margin: 0;
+  text-align: right;
+}
+
+.markdown-body span.float-left {
+  display: block;
+  float: left;
+  margin-right: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-left span {
+  margin: 13px 0 0;
+}
+
+.markdown-body span.float-right {
+  display: block;
+  float: right;
+  margin-left: 13px;
+  overflow: hidden;
+}
+
+.markdown-body span.float-right > span {
+  display: block;
+  margin: 13px auto 0;
+  overflow: hidden;
+  text-align: right;
+}
+
+.markdown-body code, .markdown-body tt {
+  padding: .2em .4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: var(--code-background);
+  border-radius: 6px;
+}
+
+.markdown-body code br, .markdown-body tt br {
+  display: none;
+}
+
+.markdown-body del code {
+  text-decoration: inherit;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre > code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre, .markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: var(--hl_Background);
+  border-radius: 6px;
+}
+
+.markdown-body pre code, .markdown-body pre tt {
+  display: inline;
+  max-width: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: initial;
+  border: 0;
+}
+
+.markdown-body .csv-data td, .markdown-body .csv-data th {
+  padding: 5px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.markdown-body .csv-data .blob-num {
+  padding: 10px 8px 9px;
+  text-align: right;
+  background: var(--background);
+  border: 0;
+}
+
+.markdown-body .csv-data tr {
+  border-top: 0;
+}
+
+.markdown-body .csv-data th {
+  font-weight: 600;
+  background: var(--thead-background);
+  border-top: 0;
+}
+
+</style>
+
+
+</head>
+<body>
+<article class='markdown-body'>
+<ul>
+<li><a href="#bilim-d%C4%B1%C5%9F%C4%B1-ayetler">Bilim dışı ayetler</a>
+<ul>
+<li><a href="#i%CC%87nsan-nas%C4%B1l-yarat%C4%B1ld%C4%B1">İnsan nasıl yaratıldı?</a></li>
+<li><a href="#cennetin-geni%C5%9Fli%C4%9Fi">Cennetin genişliği</a></li>
+<li><a href="#evrenin-yarat%C4%B1l%C4%B1%C5%9F%C4%B1">Evrenin yaratılışı</a></li>
+<li><a href="#miras-da%C4%9F%C4%B1t%C4%B1m%C4%B1nda-matematik-hatas%C4%B1">Miras dağıtımında matematik hatası</a></li>
+<li><a href="#g%C3%BCne%C5%9Fin-kara-%C3%A7amurlu-bir-suya-batmas%C4%B1">Güneşin kara çamurlu bir suya batması.</a></li>
+<li><a href="#yerel-iklim">Yerel iklim</a></li>
+<li><a href="#kalbin-d%C3%BC%C5%9F%C3%BCnme-organ%C4%B1-san%C4%B1lmas%C4%B1">Kalbin düşünme organı sanılması</a></li>
+<li><a href="#y%C4%B1ld%C4%B1r%C4%B1m-ile-korkutan-allah">Yıldırım ile korkutan Allah</a></li>
+<li><a href="#her-canl%C4%B1n%C4%B1n-%C3%A7ift-yarat%C4%B1ld%C4%B1%C4%9F%C4%B1">Her canlının çift yaratıldığı</a></li>
+<li><a href="#%C3%A7amurdan-yarat%C4%B1lan-insan">Çamurdan yaratılan insan</a></li>
+<li><a href="#%C3%B6l%C3%BCn%C3%BCn-diriltilmesi">Ölünün diriltilmesi</a></li>
+<li><a href="#denizin-yar%C4%B1lmas%C4%B1">Denizin yarılması</a></li>
+<li><a href="#ay%C4%B1n-yar%C4%B1lmas%C4%B1">Ay’ın yarılması</a></li>
+<li><a href="#hayvanlar%C4%B1n-8-%C3%A7ift-olmas%C4%B1">Hayvanların 8 çift olması</a></li>
+<li><a href="#%C5%9Feytana-at%C4%B1lan-kandiller">Şeytana atılan kandiller</a></li>
+<li><a href="#sava%C5%9F%C3%A7%C4%B1-melekler">Savaşçı Melekler</a></li>
+<li><a href="#ay%C4%B1n-nur-oldu%C4%9Fu">Ay’ın nur olduğu</a></li>
+<li><a href="#bir-gece-bin-aya-bedel">Bir gece bin aya bedel</a></li>
+<li><a href="#tatl%C4%B1-suda-inci-ve-mercan-yeti%C5%9Fti%C4%9Fi">Tatlı suda inci ve mercan yetiştiği</a></li>
+</ul>
+</li>
+<li><a href="#%C3%A7eli%C5%9Fkili-ayetler">Çelişkili ayetler</a>
+<ul>
+<li><a href="#hesap-g%C3%BCn%C3%BC-arac%C4%B1l%C4%B1k">Hesap günü aracılık</a></li>
+<li><a href="#k%C3%B6t%C3%BCl%C3%BCk-kimden-gelir">Kötülük kimden gelir?</a></li>
+<li><a href="#cennete-gidi%C5%9F">Cennete gidiş</a></li>
+<li><a href="#i%CC%87lk-m%C3%BCsl%C3%BCman">İlk Müslüman</a></li>
+<li><a href="#muhammedin-gaflar%C4%B1">Muhammed'in gafları</a></li>
+<li><a href="#i%CC%87blis-melek-mi-cin-mi">İblis melek mi cin mi?</a></li>
+<li><a href="#allah-her-%C5%9Feyi-bilir-mi">Allah her şeyi bilir mi?</a></li>
+<li><a href="#salat-eden-allah">Salat eden Allah</a></li>
+<li><a href="#ayetler-de%C4%9Fi%C5%9Fken-mi-de%C4%9Fil-mi">Ayetler değişken mi değil mi?</a></li>
+<li><a href="#kuran-apa%C3%A7%C4%B1k-m%C4%B1">Kur’an apaçık mı?</a></li>
+<li><a href="#allah%C4%B1n-ganimeti">Allah'ın ganimeti</a></li>
+<li><a href="#peygamberler-e%C5%9Fit-mi">Peygamberler eşit mi?</a></li>
+<li><a href="#kuran-kime-indi">Kur’an kime indi?</a></li>
+<li><a href="#her-%C5%9Feyi-bilmeyen-allah">Her şeyi bilmeyen Allah</a></li>
+<li><a href="#allah%C4%B1n-yemini">Allah'ın yemini</a></li>
+<li><a href="#s%C3%B6vmeyin-diyip-s%C3%B6ven-allah">Sövmeyin diyip söven Allah</a></li>
+<li><a href="#allah%C4%B1n-velileri">Allah’ın velileri</a></li>
+<li><a href="#allah-tek-mi">Allah tek mi?</a></li>
+<li><a href="#allah-yard%C4%B1ma-muhta%C3%A7-m%C4%B1">Allah yardıma muhtaç mı?</a></li>
+<li><a href="#yer-ve-g%C3%B6k-ka%C3%A7-g%C3%BCnde-yarat%C4%B1lm%C4%B1%C5%9Ft%C4%B1r">Yer ve gök kaç günde yaratılmıştır?</a></li>
+<li><a href="#musevilere-yahudi-denmesi">Musevilere &quot;Yahudi&quot; denmesi</a></li>
+<li><a href="#i%CC%87nananlar-muhammedin-kulu-mu">İnananlar Muhammed’in kulu mu?</a></li>
+<li><a href="#cehennemin-yeme%C4%9Fi">Cehennem'in yemeği</a></li>
+</ul>
+</li>
+<li><a href="#namaz-ve-namaskar-benzerli%C4%9Fi">Namaz ve Namaskar benzerliği</a></li>
+<li><a href="#kurana-neden-mi-inanm%C4%B1yoruz">Kur'an'a neden mi inanmıyoruz?</a></li>
+<li><a href="#kuran-i%CC%87ncil-ve-tevrat-%C3%A7eli%C5%9Fkileri">Kur'an, İncil ve Tevrat çelişkileri</a>
+<ul>
+<li><a href="#kuran-ve-i%CC%87ncil">Kur’an ve İncil</a></li>
+<li><a href="#kuran-ve-tevrat">Kur'an ve Tevrat</a></li>
+</ul>
+</li>
+<li><a href="#namaz-ve-namaskar-benzerli%C4%9Fi-1">Namaz ve Namaskar benzerliği</a>
+<ul>
+<li><a href="#surya-namaskar">Surya Namaskar</a></li>
+<li><a href="#vard%C4%B1%C4%9F%C4%B1m-sonu%C3%A7">Vardığım sonuç</a></li>
+<li><a href="#i%CC%87lgili-kuran-ayeti">İlgili Kur’an ayeti</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="bilim-dışı-ayetler">Bilim dışı ayetler</h1>
+<p>Bilimsel olarak doğru olmayan ayetler.</p>
+<h2 id="insan-nasıl-yaratıldı">İnsan nasıl yaratıldı?</h2>
+<p>Ayet bel ile kaburga kemikleri arasından diyor tıp ise testislerden diyor.</p>
+<blockquote>
+<p>&quot;Öyleyse insan neden yaratıldığına bir baksın.&quot; <a href="https://acikkuran.com/86/5">86\5</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Fışkırıp çıkan bir sudan yaratıldı.&quot; <a href="https://acikkuran.com/86/6">86\6</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Bu su, bel ile kaburga kemikleri arasından çıkar.&quot; <a href="https://acikkuran.com/86/7">86\7</a></p>
+</blockquote>
+<h2 id="cennetin-genişliği">Cennetin genişliği</h2>
+<p>Cennet tarif edilirken &quot;eni, gökle yerin genişliği kadar&quot;, &quot;genişliği göklerle yer arası kadar&quot; ifadeleri geçiyor. Yerden kastedilen Dünya gezegeni olduğuna göre, Dünya da diğer gök cisimlerinden biri olduğuna göre &quot;gök ile yer kadar&quot; demek anlamsız bir ifadedir. Hatta bu ifadeden yerin altta, uzayın ise üstte algılandığı anlaşılmaktadır.</p>
+<blockquote>
+<p>&quot;Rabbinizin bağışına, <strong>genişliği göklerle yer arası kadar</strong> olan ve Allah'a karşı gelmekten sakınanlar için hazırlanmış bulunan cennete koşun.&quot; <a href="https://acikkuran.com/3/133">3\133</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Rabbinizden bir bağışlanmaya ve <strong>eni, gökle yerin genişliği kadar olan</strong>, Allah'a ve Resulüne inananlar için hazırlanan cennete... <a href="https://acikkuran.com/57/21">57\21</a></p>
+</blockquote>
+<h2 id="evrenin-yaratılışı">Evrenin yaratılışı</h2>
+<p>Yerin 2, dağların 4, göklerin ise 2 günde yaratılmış olması ve yerin göklerden önce yaratılmış olması (Füssilet/9-10-11-12)</p>
+<blockquote>
+<p>&quot;De ki: 'Siz mi <strong>yeri iki günde yaratanı</strong> inkar ediyor...'&quot; <a href="https://acikkuran.com/41/9">41\9</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;O, <strong>dört gün içinde, yeryüzünde yükselen sabit dağlar</strong> yarattı...&quot; <a href="https://acikkuran.com/41/10">41\10</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Sonra duman halinde bulunan göğe yöneldi</strong>; ona ve yeryüzüne, &quot;İsteyerek veya istemeyerek gelin&quot; dedi. İkisi de, &quot;İsteyerek geldik&quot; dediler. <a href="https://acikkuran.com/41/11">41\11</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Böylece onları, <strong>iki günde yedi gök olarak</strong> yarattı ve her göğe kendi işini bildirdi. En yakın göğü kandillerle süsledik ve onu koruduk...&quot; <a href="https://acikkuran.com/41/12">41\12</a></p>
+</blockquote>
+<h2 id="miras-dağıtımında-matematik-hatası">Miras dağıtımında matematik hatası</h2>
+<p>Nisa suresindeki miras paylaşımındaki matematik hatası şu şekildedir. Üç ayete göre  kişi öldüğünde geriye sadece annesi kalırsa <code>1/3</code> (Nisa, 11), eğer çocuk yoksa ve sadece koca kalırsa <code>1/2</code> (Nisa, 12), ölenin çocuğu yoksa ve bir de kız kardeşi bulunursa <code>1/2</code> (Nisa, 176) oranında pay alacaklardır. Hal böyle olunca da netice <code>1/3 + 1/2 + 1/2 = 8/6</code> çıkacak ve sonuç net olarak 1’i vermeyecektir.</p>
+<h2 id="güneşin-kara-çamurlu-bir-suya-batması">Güneşin kara çamurlu bir suya batması.</h2>
+<p>Eski toplumlar, Dünya'nın da Güneş, Ay ve yıldızlar gibi bir gök cismi olduğunu bilmezlerdi.
+Yere göre Güneş'in hareket ettiğini sanır, doğuda bir yerden doğup batıda bir yerde battığını düşünürlerdi. Bazı filozoflar, asıl dönenin Güneş değil Dünya olduğunu keşfetmiş olsalar da, insanların çoğu bu bilgiden habersizdi. Kur’an’da anlatılan Zülkarneyn hikayesinde de güneşin dünyada bir çamur gözesine battığı yazılır.</p>
+<blockquote>
+<p>&quot;Nihayet güneşin battığı yere varınca, onu kara bir balçıkta batar buldu...&quot; <a href="https://www.kuranayetleri.net/kehf-suresi/ayet-86">18\86</a></p>
+</blockquote>
+<p>Ayetten Dünya'yı göğün altında uçsuz bucaksız bir yer olarak gören ve göz yanılmasından dolayı güneşin dünyanın batısında bir çamur gözesine battığını sanan bir yanlış bilgiye sahip olunduğu anlaşılmaktadır. Bu ayet, İslamcılar tarafından güneşin sanki okyanusta batıyormuş gibi görünmesi olarak açıklanmaya çalışılır. Öyle olsa, ayette &quot;sanki&quot; sözcüğü olurdu ama yoktur ve bazı mealciler bu sözcüğü parantez içinde ayete ekler.</p>
+<h2 id="yerel-iklim">Yerel iklim</h2>
+<p>Kur'an'da sadece Orta Doğu'ya özgü meyvelerden ve iklim özelliklerinden bahsedilmesi evrensel bir tanrı anlayışı ile çelişir.</p>
+<h2 id="kalbin-düşünme-organı-sanılması">Kalbin düşünme organı sanılması</h2>
+<p>Eski çağlarda kalp düşünme organı sanıldığı için ayetlerde duygular, düşünceler, inançlar kalpteymiş gibi anlatılmış. Osya kalp kan basıncını düzenleyen bir organdır.</p>
+<blockquote>
+<p>&quot;...müjde verici olarak senin <strong>kalbine indirmiştir</strong>.&quot; <a href="https://acikkuran.com/2/97">2\97</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Kim şahitliği gizlerse, şüphesiz onun <strong>kalbi günahkardır</strong>.&quot; <a href="https://acikkuran.com/2/283">2\283</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;<strong>Kalbini bizi anmaktan gafil kıldığımız...</strong>&quot; <a href="https://acikkuran.com/18/28">18\28</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;...senin <strong>kalbine</strong> apaçık Arapça bir dil ile indirmiştir.&quot; <a href="https://acikkuran.com/26/195">26\195</a></p>
+</blockquote>
+<h2 id="yıldırım-ile-korkutan-allah">Yıldırım ile korkutan Allah</h2>
+<p>Rad-12-13 ayetlerinde gök gürültüsü, şimşek ve yıldırım Allah’ın insanları korkutma aracı olarak anlatılıyor. Bu bilimsel bir çelişkidir. Ayrıca Allah'ın paratonerden haberi yok muydu?</p>
+<blockquote>
+<p>&quot;O, korku ve ümit vermek için size şimşeği gösterendir, yağmur yüklü bulutları meydana getirendir.&quot; <a href="https://acikkuran.com/13/12">13\12</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Gök gürlemesi O'na hamd ederek tespih eder. Melekler de O'nun korkusundan tespih ederler. O, yıldırımlar gönderir de onlarla dilediğini çarpar. Onlar ise Allah hakkında mücadele ediyorlar. Halbuki O, azabı çok şiddetli olandır.&quot; <a href="https://acikkuran.com/13/13">13\13</a></p>
+</blockquote>
+<h2 id="her-canlının-çift-yaratıldığı">Her canlının çift yaratıldığı</h2>
+<p>Zariyat-49 ayetine göre her canlı çift (erkekli dişili) yaratılmıştır oysa bakteriler, arkeler, virüsler bölünerek çoğalırlar, bazı bitkiler, şapkalı mantar, sölenter eşeysiz çoğalırlar.</p>
+<blockquote>
+<p>&quot;Düşünüp ibret alasınız diye <strong>her şeyden (erkekli dişili) iki eş yarattık.</strong>&quot; <a href="https://acikkuran.com/51/49">51\49</a></p>
+</blockquote>
+<h2 id="çamurdan-yaratılan-insan">Çamurdan yaratılan insan</h2>
+<p>Rahman-14 ayetine göre Allah insanı pişmiş çamur gibi bir balçıktan yaratmıştır. &quot;Canlılık&quot; değil sadece &quot;insan&quot; sözcüğü kullanılması evrim teorisine terstir. İnsan çamurdan yaratılmamıştır. Halbuki benzer bir hayvanın DNA'sı üzerinde yapacağı değişiklikle insanı yaratması daha bilimsel olmaz mıydı?</p>
+<blockquote>
+<p>&quot;Allah, insanı pişmiş çamur gibi bir balçıktan yarattı.&quot; <a href="https://acikkuran.com/55/14">55\14</a></p>
+</blockquote>
+<h2 id="ölünün-diriltilmesi">Ölünün diriltilmesi</h2>
+<p>Ölünün diriltilmesi bilim dışı sözde mucizedir.</p>
+<blockquote>
+<p>&quot;'Sığırın bir parçası ile öldürülene vurun' dedik. (Denileni yaptılar ve ölü dirildi.) İşte, Allah ölüleri böyle diriltir, düşünesiniz diye mucizelerini de size böyle gösterir.&quot; <a href="https://acikkuran.com/2/73">2\73</a></p>
+</blockquote>
+<h2 id="denizin-yarılması">Denizin yarılması</h2>
+<p>Denizin yarılması bilim dışı sözde mucizedir.</p>
+<blockquote>
+<p>&quot;Hani, sizin için <strong>denizi yarmış</strong>, sizi kurtarmış...&quot; <a href="https://acikkuran.com/2/50">2\50</a></p>
+</blockquote>
+<h2 id="ayın-yarılması">Ay’ın yarılması</h2>
+<blockquote>
+<p>&quot;Kıyamet yaklaştı ve <strong>ay yarıldı</strong>.&quot; <a href="https://acikkuran.com/54/1">54\1</a></p>
+</blockquote>
+<h2 id="hayvanların-8-çift-olması">Hayvanların 8 çift olması</h2>
+<blockquote>
+<p>&quot;O, sizi bir tek nefisten yarattı. Sonra ondan eşini var etti. Sizin için hayvanlardan (erkek ve dişi olarak) sekiz eş yarattı. &quot; <a href="https://acikkuran.com/39/6">39\6</a></p>
+</blockquote>
+<p>Sekiz çift hayvan az değil mi? Hangileri acaba? At, eşek, deve, koyun, keçi, öküz-inek, tavuk-horoz, hindi, ördek, tavşan, kuş, balık, kedi, köpek, balarısı…
+Aşağıdaki ayetlerde açıklanıyor hangileri olduğu:</p>
+<blockquote>
+<p>&quot;O, hayvanlardan sekiz eşi de yaratandır, koyundan iki, keçiden de iki.&quot; <a href="https://acikkuran.com/6/143">6\143</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Deveden bir çift sığırdan da...&quot; <a href="https://acikkuran.com/6/144">6\144</a></p>
+</blockquote>
+<h2 id="şeytana-atılan-kandiller">Şeytana atılan kandiller</h2>
+<p>Mülk-5 ayetinde yıldızların şeytanlar için atış tanesi olduğu yazar, bu bilim dışıdır.</p>
+<blockquote>
+<p>&quot;Andolsun ki biz, (dünyaya) en yakın olan göğü kandillerle donattık. <strong>Bunları şeytanlara atış taneleri yaptık</strong> ve onlara alevli ateş azabını hazırladık.&quot; <a href="https://acikkuran.com/67/5">67\5</a></p>
+</blockquote>
+<p>Kandille kastedilen yıldız. Ama sanki yıldızın ne olduğu bilinmiyor. Boyutları küçük sanılıyor. Güneş ile yıldızlar farklı düşünülüyor. Koca yıldız, belki de dünyanın 30-40 misli büyüklüğünde, ama ayette şeytanlara atış tanesi olarak yapıldığını söylüyor.</p>
+<h2 id="savaşçı-melekler">Savaşçı Melekler</h2>
+<p>Savaşta Müslümanlara melek ordusuyla destek veriliyormuş. Melek ordusu bilim dışıdır. Kazanılan savaşta melekler yardım etmişken mağlup olunan savaşta yardımcı olmamışlar? Zafer meleklerden, yenilgi ise insanların hatasından. Diğer ileri zamanlarda da melek ordusuna ihtiyaç var fakat Allah umursamamış.</p>
+<blockquote>
+<p>&quot;Hani sen mü'minlere, &quot;Rabbinizin, indirilmiş üç bin melek ile yardım etmesi size yetmez mi?&quot; diyordun.&quot; <a href="https://acikkuran.com/3/124">3\124</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Evet, sabrettiğiniz ve Allah'a karşı gelmekten sakındığınız takdirde; onlar ansızın üzerinize gelseler bile Rabbiniz nişanlı beş bin melekle size yardım eder.&quot; <a href="https://acikkuran.com/3/125">3\125</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Onların (müşriklerin) başına (Bedir'de) iki mislini getirdiğiniz bir musibet (Uhud'da) sizin başınıza geldiğinde, &quot;Bu, nereden başımıza geldi?&quot; dediniz, öyle mi? De ki: &quot;O (musibet), kendinizdendir.&quot; Şüphesiz Allah'ın gücü her şeye hakkıyla yeter.&quot; <a href="https://acikkuran.com/3/165">3\165</a></p>
+</blockquote>
+<h2 id="ayın-nur-olduğu">Ay’ın nur olduğu</h2>
+<p>Yunus-5 ayetinde Ay'ın ışık kaynağı olduğu yazıyor fakat Ay’ın bir nur olmadığı sadece geceleri güneşten aldığı ışığı yansıttığı biliniyor.</p>
+<blockquote>
+<p>&quot;O, güneşi bir ışık (kaynağı), ayı da (geceleyin) bir aydınlık (kaynağı) kılan, yılların sayısını ve hesabı bilmeniz için ona menziller takdir edendir.&quot; <a href="https://acikkuran.com/10/5">10\5</a></p>
+</blockquote>
+<h2 id="bir-gece-bin-aya-bedel">Bir gece bin aya bedel</h2>
+<p>Kadir-3 ayetinde bir gecenin bin aydan (bir ömür) daha hayırlı olduğu yazar. Sadece bir gece bir insan ömründen nasıl daha hayırlı olabilir?</p>
+<blockquote>
+<p>&quot;Kadir Gecesi bin aydan daha hayırlıdır!&quot; <a href="https://acikkuran.com/97/3">97\3</a></p>
+</blockquote>
+<h2 id="tatlı-suda-inci-ve-mercan-yetiştiği">Tatlı suda inci ve mercan yetiştiği</h2>
+<p><em>Rahman-9</em>, <em>Rahmnan-22</em> ayetleri ile <em>Furkan-53</em> ayetinde geçen iki denizin birbirine karıştırıldığı ama aralarında bir engel olduğu yazar. Denizlerden birinin suyunun içilebilen tatlı su olduğu, diğerinin acı ve tuzlu su olduğu yazılıdır. <em>Rahman-22</em>'de her ikisinde de inci ve mercan yetiştirildiği yazar. Halbuki tatlı suda inci ve mercan yetişmez. Suni olarak inci yetiştirilse bile mercan hiç yetişmez.</p>
+<h1 id="çelişkili-ayetler">Çelişkili ayetler</h1>
+<h2 id="hesap-günü-aracılık">Hesap günü aracılık</h2>
+<p>Hesap gününde Allah’tan başkası şefaat (aracılık) edebilir mi?</p>
+<p><em><strong>Şefaat</strong>: Öbür tarafta peygamberlerin ve kendilerine izin verilen kimselerin inançlı kişilerin bağışlanması için Allah katında istekte bulunmak.</em></p>
+<p>Bazı ayetler edebilir derken bazıları edemez der.</p>
+<ul>
+<li>
+<p>Edemez diyen ayetler;</p>
+<blockquote>
+<p>&quot;Öyle bir günden sakının ki, o gün hiç kimse bir başkası adına bir şey ödeyemez. Hiçbir <strong>kimseden herhangi bir şefaat kabul olunmaz</strong>, fidye alınmaz. Onlara yardım da edilmez.&quot; <a href="https://acikkuran.com/2/48">2\48</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Kimsenin kimse namına bir şey ödemeyeceği, hiç kimseden fidye alınmayacağı, <strong>kimseye şefaatin yarar sağlamayacağı</strong> ve hiç kimsenin hiçbir taraftan yardım göremeyeceği günden sakının.&quot;  <a href="https://acikkuran.com/2/123">2\123</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Evet, hesap ve ceza gününün <strong>ne olduğunu sen ne bileceksin</strong>?&quot;  <a href="https://acikkuran.com/82/18">82\18</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;O gün kimse kimseye hiçbir fayda sağlayamayacaktır. <strong>O gün buyruk, yalnız Allah'ındır.</strong>&quot; <a href="https://acikkuran.com/82/19">82\19</a></p>
+</blockquote>
+</li>
+<li>
+<p>Edebilir diyen ayetler;</p>
+<blockquote>
+<p>&quot;Rahman’ın katında <strong>söz almış olanlardan başkaları</strong> şefaat hakkına sahip olmayacaklardır.&quot; <a href="https://acikkuran.com/19/8">19\8</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;O'nu bırakıp taptıkları şeyler şefaat edemezler. Ancak bilerek hakka şahitlik edenler <strong>şefaat edebilirler.</strong>&quot; <a href="https://acikkuran.com/43/86">43\86</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Kendileri için Allah'tan başka ne bir dost, ne de bir <strong>şefaatçi bulunmaksızın</strong>, Rab'lerinin huzurunda toplanmaktan korkanları, Allah'a karşı gelmekten sakınsınlar diye, onunla (Kur'an ile) uyar.&quot; <a href="https://acikkuran.com/6/51">6\51</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="kötülük-kimden-gelir">Kötülük kimden gelir?</h2>
+<p>Kötülük Allah'tan mı gelir kendinden mi?</p>
+<ul>
+<li>
+<p>Allah'tan;</p>
+<blockquote>
+<p>&quot;Nerede olursanız olun, sağlam ve tahkim edilmiş kaleler içinde bulunsanız bile ölüm size ulaşacaktır. Onlara bir iyilik gelirse, &quot;Bu, Allah'tandır&quot; derler. Onlara bir kötülük gelirse, &quot;Bu, senin yüzündendir&quot; derler. (Ey Muhammed!) De ki: &quot;<strong>Hepsi Allah'tandır</strong>.&quot; Bu topluma ne oluyor ki, neredeyse hiçbir sözü anlamıyorlar!&quot; <a href="https://acikkuran.com/4/78">4\78</a></p>
+</blockquote>
+</li>
+<li>
+<p>Kendinden;</p>
+<blockquote>
+<p>&quot;Sana ne iyilik gelirse Allah'tandır. Sana ne <strong>kötülük gelirse kendindendir</strong>. (Ey Muhammed!) Seni insanlara bir peygamber olarak gönderdik. Şahit olarak Allah yeter.&quot; <a href="https://acikkuran.com/4/79">4\79</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="cennete-gidiş">Cennete gidiş</h2>
+<p>Yahudiler, Sabiiler ve Hristiyanlar cennete gidebilecek mi?</p>
+<ul>
+<li>
+<p>Gidebilir diyen ayetler;</p>
+<blockquote>
+<p>&quot;Şüphesiz, inananlar (Müslümanlar) ile Yahudiler, Hristiyanlar ve Sabiilerden (her bir grubun kendi şeriatında) &quot;Allah'a ve ahiret gününe inanan ve salih ameller işleyenler için Rableri katında mükafat vardır; onlar korkuya uğramayacaklar, mahzun da olmayacaklardır&quot; (diye hükmedilmiştir).&quot; <a href="https://acikkuran.com/2/62">2\62</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Şüphesiz inananlar (müslümanlar) ile Yahudiler, Sabiiler ve Hristiyanlardan (her bir grubun kendi şeriatında) &quot;Allah'a ve ahiret gününe inanan ve salih ameller işleyenler için hiçbir korku yoktur. Onlar mahzun da olmayacaklardır&quot; (diye hükmedilmiştir.)&quot; <a href="https://acikkuran.com/5/69">5\69</a></p>
+</blockquote>
+</li>
+<li>
+<p>Gidemez diyen ayetler;</p>
+<blockquote>
+<p>&quot;Kim İslam'dan başka bir din ararsa, (bilsin ki o din) ondan kabul edilmeyecek ve o ahirette hüsrana uğrayanlardan olacaktır.&quot; <a href="https://acikkuran.com/3/85">3\85</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Yahudiler, &quot;Üzeyr, Allah'ın oğludur&quot; dediler. Hristiyanlar ise, &quot;İsa Mesih, Allah'ın oğludur&quot; dediler. Bu, onların ağızlarıyla söyledikleri (gerçeği yansıtmayan) sözleridir. Onların bu sözleri daha önce inkar etmiş kimselerin söylediklerine benziyor. Allah, onları kahretsin. Nasıl da haktan çevriliyorlar!&quot; <a href="https://acikkuran.com/9/30">9\30</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="ilk-müslüman">İlk Müslüman</h2>
+<p><em>Enam-163</em>'e göre <strong>Muhammed</strong>. <em>Araf-143</em>'e göre <strong>Musa</strong>. <em>Ali İmran-67</em>'ye göre <strong>İbrahimdir</strong> (İbrahim tarih olarak Muhammed'den önce yaşadı).</p>
+<blockquote>
+<p>&quot;De ki: Şüphesiz, <strong>benim</strong> namazım, ibadetlerim, hayatım ve ölümüm alemlerin Rabbi olan Allah aittir. Onun hiçbir ortağı yoktur. Ben bununla emrolundum ve ben <strong>Müslümanların ilkiyim.</strong>&quot; <a href="https://acikkuran.com/6/163">6\163</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;<strong>Musa</strong>, tâyin ettiğimiz vakitte gelip Rabbi onunla konuşunca: 'Rabbim! Bana zatını göster, sana bakayım.' dedi. Allah: 'Beni asla göremezsin! Fakat şu dağa bak. Eğer o dağ yerinde durabilirse, o zaman sen de beni görebileceksin!' dedi. Rabbi o dağa tecelli edince onu darmadağın etti. Musa da bayılıp düştü. Ayılınca; 'Seni noksan sıfatlardan tenzih ederim, sana tövbe ettim, <strong>ben iman edenlerin ilkiyim!</strong>' dedi.&quot; <a href="https://acikkuran.com/7/143">7\143</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;<strong>İbrahim</strong> ne Yahudi idi, ne de Hristiyan. Fakat o, hanîf bir <strong>Müslümandı</strong>. O, müşriklerden de değildi.&quot; <a href="https://acikkuran.com/3/67">3\67</a></p>
+</blockquote>
+<h2 id="muhammedin-gafları">Muhammed'in gafları</h2>
+<p>Aşağıdaki ayetlerde Kur’an’ı yazanın bir insan olduğu açıkça belli oluyor. Hitap eden Allah değil. Belli ki gaf yapmış, &quot;De ki&quot; ekini unutmuş.</p>
+<blockquote>
+<p>&quot;Şöyle ki Allahdan başkasına kul olmayın, ben size onun tarafından tebşir ve inzar için gönderilmiş bir Peygamberim&quot; <a href="https://acikkuran.com/11/2">11\2</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Hakkında ayrılığa düştüğünüz herhangi bir şeyin hükmü Allah'a aittir. İşte bu, Rabbim Allah'tır. Yalnız O'na tevekkül ettim ve ancak O'na yöneliyorum.&quot; <a href="https://acikkuran.com/42/10">42\10</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Yahudiler, &quot;Üzeyr, Allah'ın oğludur&quot; dediler. Hristiyanlar ise, &quot;İsa Mesih, Allah'ın oğludur&quot; dediler. Bu, onların ağızlarıyla söyledikleri (gerçeği yansıtmayan) sözleridir. Onların bu sözleri daha önce inkar etmiş kimselerin söylediklerine benziyor. <strong>Allah, onları kahretsin.</strong> Nasıl da haktan çevriliyorlar!&quot; <a href="https://acikkuran.com/9/30">9\30</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Allah ile beraber başka bir ilah edinmeyin. Gerçekten ben, size, Allah tarafından gönderilmiş açık bir uyarıcıyım.&quot; <a href="https://acikkuran.com/51/51">51\51</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Rabbinizden size gerçekleri gösteren deliller geldi. Artık kim gözünü açar hakkı idrak ederse kendi yararına, kim de (hakkın karşısında) körlük ederse kendi zararınadır. Ben başınızda bekçi değilim.&quot; <a href="https://acikkuran.com/6/104">6\104</a></p>
+</blockquote>
+<p>Enam-114'te Diyanet çevirisi fazladan (de) eklemiş, Arapçasında yok.</p>
+<blockquote>
+<p>&quot;Size Kitab'ı hak olarak indiren o iken ben Allah'tan başka bir hakem mi arayacağım?&quot; (de). Kendilerine kitap verdiklerimiz de onun, Rabbin katından hak olarak indirilmiş olduğunu bilirler. O halde, sakın şüphecilerden olma.&quot; <a href="https://acikkuran.com/6/114">6\114</a></p>
+</blockquote>
+<h2 id="iblis-melek-mi-cin-mi">İblis melek mi cin mi?</h2>
+<p>İblis Bakara-34′e göre melek, Kehf-50′ye göre ise cindir.</p>
+<blockquote>
+<p>&quot;Hani <strong>meleklere</strong>, &quot;Âdem için saygı ile eğilin&quot; demiştik de <strong>İblis hariç bütün melekler</strong> hemen saygı ile eğilmişler...&quot; <a href="https://acikkuran.com/2/34">2\34</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Hani biz meleklere, 'Adem için saygı ile eğilin' demiştik de İblis’ten başka hepsi saygı ile eğilmişlerdi. <strong>İblis ise cinlerdendi</strong>...&quot; <a href="https://acikkuran.com/18/50">18\50</a></p>
+</blockquote>
+<h2 id="allah-her-şeyi-bilir-mi">Allah her şeyi bilir mi?</h2>
+<p>Enfal-65'te Müslümanlar 10 katı sayıda düşmanı yenerken &quot;Allah yükü hafifletti ve sizde bir zaaf olduğunu bildi&quot; diyerek Enfal-66'da Allah 2 kat düşmanı yenebileceklerini söylüyor. Allah duruma göre fikir değiştiriyor.</p>
+<blockquote>
+<p>&quot;Ey Peygamber! Müminleri cihada teşvik eyle. <strong>Eğer sizden sabredecek yirmi kişi olursa ikiyüze galip gelirler ve eğer sizden yüz kişi olursa kafirlerden bin kişiye galip gelirler.</strong> Çünkü onlar hakkı ve akıbeti düşünmeyen anlayışsız bir kavimdirler.&quot; <a href="https://acikkuran.com/8/65">8\65</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Şimdi Allah sizden yükü hafifletti ve sizde bir zaaf olduğunu bildi. O halde sizden sabredecek yüz kişi olursa ikiyüz düşmana galip gelirler, sizden bin kişi olursa Allah’ın izniyle ikibin düşmana galip gelirler. Allah sabredenlerle beraberdir.&quot; <a href="https://acikkuran.com/8/66">8\66</a></p>
+</blockquote>
+<h2 id="salat-eden-allah">Salat eden Allah</h2>
+<p>Ahzab-56 ayetinde Allah’ın peygambere salat (dua, namaz) ettiği ifadesi büyük çelişkidir.
+Bu ayetteki <code>salat</code>'ın namaz anlamına gelmediğini, destek anlamı taşıdığını öne sürenler de vardır. Bu da apaçık olduğu söylenen ayetler üzerinde bırakın sıradan insanları, İslam alimlerinin dahi anlaşamadığını gösterir.</p>
+<blockquote>
+<p>&quot;Şüphesiz <strong>Allah ve melekleri Peygamber'e salat ediyorlar</strong>. Ey iman edenler! Siz de ona salat edin, selam edin.&quot; <a href="https://acikkuran.com/33/56">33\56</a></p>
+</blockquote>
+<h2 id="ayetler-değişken-mi-değil-mi">Ayetler değişken mi değil mi?</h2>
+<p>Allahın kanunları, hükümleri değişebilir mi? Bazı ayetler değişebilir derken bazıları değişmez der.</p>
+<ul>
+<li>
+<p>Değişir diyen ayetler;</p>
+<blockquote>
+<p>&quot;Biz bir ayeti değiştirip yerine başka bir ayet getirdiğimiz zaman...&quot; <a href="https://acikkuran.com/16/101">16\101</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Biz herhangi bir ayetin hükmünü yürürlükten kaldırır veya onu unutturursak, yerine daha hayırlısını veya mislini getiririz...&quot; <a href="https://acikkuran.com/2/106">2\106</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;...Sonra Allah, âyetlerini sağlamlaştırır...&quot; <a href="https://acikkuran.com/22/52">22\52</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Allah, dilediğini siler, dilediğini de sabit kılıp bırakır...&quot; <a href="https://acikkuran.com/13/39">13\39</a></p>
+</blockquote>
+</li>
+<li>
+<p>Değişemez diyen ayetler;</p>
+<blockquote>
+<p>&quot;…Hayır! sen Allah’ın kanununda değişiklik bulamazsın. Sen Allah’ın kanununda asla bir döneklik bulamazsın.&quot; <a href="https://acikkuran.com/35/43">35\43</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Allah'ın öteden beri işleyip duran kanunu (budur). Allah'ın kanununda asla bir değişiklik bulamazsın.&quot; <a href="https://acikkuran.com/48/23">48\23</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="kuran-apaçık-mı">Kur’an apaçık mı?</h2>
+<p>Kur’an anlaşılmaz bir yığın ayetle ve kavramla dolu olmasına rağmen apaçık ve anlaşılır olduğunu söyleyen ayetler vardır. Bu bir çelişkidir. Anlaşılabilmesi için eski Kureyş Arapçasının, hadislerin, peygamberin ayrıntılı hayatının, dönem tarihinin iyi bilinmesi gerekir. Orucun kaç gün olduğu, namazın kaç vakit olduğu bile açıkça belirtilmemiştir.</p>
+<blockquote>
+<p>&quot;Apaçık Arapça bir dille.&quot; <a href="https://acikkuran.com/26/195">26\195</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Apaçık kitaba yemin olsun ki&quot; <a href="https://acikkuran.com/43/2">43\2</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;İyice anlayasınız diye biz, onu Arapça bir Kur'an yaptık.&quot; <a href="https://acikkuran.com/43/3">43\3</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Ve eğer Biz onu yabancı dilde bir Kur'an yapsaydık diyeceklerdi ki: 'Ayetleri <strong>genişçe açıklansaydı ya</strong>! Arab'a yabancı dil (öyle) mi?' De ki: &quot;O iman edenler için bir rehber ve şifadır, iman etmeyenlerin ise kulaklarında bir ağırlık vardır ve o, onlara karşı körlüktür. Onlara uzak bir yerden haykırılır.&quot; <a href="https://acikkuran.com/41/44">41\44</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;(Ey Muhammed!) Biz Onu (Kur'an'ı) senin dilinle kolaylaştırdık ki, düşünüp öğüt alsınlar.&quot; <a href="https://acikkuran.com/44/58">44\58</a></p>
+</blockquote>
+<h2 id="allahın-ganimeti">Allah'ın ganimeti</h2>
+<p>Her şeyi yaratan Allah ganimete ihtiyaç duyuyor. Enfal-1’de &quot;ganimetler Allah’ın ve peygamberindir&quot; denirken, Enfal-41′de &quot;ganimetlerin beşte biri Allah’ın ve peygamberindir&quot; deniyor.</p>
+<blockquote>
+<p>&quot;(Ey Muhammed!) Sana ganimetler hakkında soruyorlar. De ki: '<strong>Ganimetler, Allah'a ve Resulüne aittir</strong>. O halde, eğer mü'minler iseniz Allah'a karşı gelmekten sakının, aranızı düzeltin, Allah ve Rasulüne itaat edin.'&quot; <a href="https://acikkuran.com/8/1">8\1</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Bilin ki, ganimet olarak aldığınız herhangi bir şeyin <strong>beşte biri mutlaka Allah'a</strong>, Peygamber'e, onun yakınlarına, yetimlere, yoksullara ve yolculara aittir...&quot; <a href="https://acikkuran.com/8/41">8\41</a></p>
+</blockquote>
+<h2 id="peygamberler-eşit-mi">Peygamberler eşit mi?</h2>
+<p>Bakara-285'te Peygamberler arasında fark olmadığı söylenirken, aynı surenin 253. ayetinde; &quot;İşte bu peygamberlerin bir kısmını diğerlerine üstün kıldık...&quot; denir.</p>
+<blockquote>
+<p>&quot;İşte peygamberler! <strong>Biz, onların bir kısmını bir kısmına üstün kıldık.</strong> İçlerinden, Allah'ın konuştukları vardır. Bir kısmının da derecelerini yükseltmiştir...&quot; <a href="https://acikkuran.com/2/253">2\253</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Peygamber, Rabbinden kendisine indirilene iman etti, mü'minler de (iman ettiler). Her biri; Allah'a, meleklerine, kitaplarına ve peygamberlerine iman ettiler ve şöyle dediler: '<strong>Onun peygamberlerinden hiçbirini (diğerinden) ayırt etmeyiz...</strong>'&quot;  <a href="https://acikkuran.com/2/285">2\285</a></p>
+</blockquote>
+<h2 id="kuran-kime-indi">Kur’an kime indi?</h2>
+<p>Kur’an şehirlerin anası ve çevresindekilere mi yoksa tüm alemlere mi indi? Enam-92'a göre şehirlerin anası ve çevresi Kalem-52'ye göre alemler.</p>
+<blockquote>
+<p>&quot;İşte bu, önündekileri doğrulayıcı ve şehirlerin anası ile çevresindekileri uyarman için indirdiğimiz kutlu Kitaptır...&quot; <a href="https://acikkuran.com/6/92">6\92</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Halbuki o (Kur'an) bütün akıllı alemler için bir öğüttür.&quot; <a href="https://acikkuran.com/68/52">68\52</a></p>
+</blockquote>
+<h2 id="her-şeyi-bilmeyen-allah">Her şeyi bilmeyen Allah</h2>
+<p>Allah'ın her şeyi bildiğini söyleyen bir sürü ayet olmasına rağmen Sebe-40'ta kimin neye taptığını meleklere soruyor.</p>
+<blockquote>
+<p>&quot;Onların hepsini toplayacağı gün, Allah meleklere, '<strong>Bunlar mı size tapıyorlardı?</strong>' diye <strong>sorar</strong>.&quot; <a href="https://acikkuran.com/34/40">34\40</a></p>
+</blockquote>
+<h2 id="allahın-yemini">Allah'ın yemini</h2>
+<p>Kur’an Allah’ın yeminleri ile doludur.Her şeyi yaratan Allah'ın insan gibi yemin etmesi bir çelişkidir.</p>
+<ol>
+<li>&quot;Ant olsun şiddetle çekip çıkaranlara&quot; <a href="https://acikkuran.com/79/1">79/1</a></li>
+<li>&quot;Ant olsun kolaylıkla alanlara&quot; <a href="https://acikkuran.com/79/2">79/2</a></li>
+<li>&quot;Ant olsun yüzüp yüzüp gidenlere&quot; <a href="https://acikkuran.com/79/3">79/3</a></li>
+</ol>
+<h2 id="sövmeyin-diyip-söven-allah">Sövmeyin diyip söven Allah</h2>
+<p>Enam-108′de farklı inançdakilere sövmeyin denirken;</p>
+<blockquote>
+<p>&quot;Onların, <strong>Allah'ı bırakıp tapındıklarına sövmeyin</strong>, sonra onlar da haddi aşarak, bilgisizce Allah'a söverler.&quot; <a href="https://acikkuran.com/6/108">6/108</a></p>
+</blockquote>
+<p><a href="https://acikkuran.com/2/171">2\171</a>, <a href="https://acikkuran.com/7/179">7\179</a>, <a href="https://acikkuran.com/25/44">25\44</a>, <a href="https://acikkuran.com/9/28">9\28</a>, <a href="https://acikkuran.com/2/65">2\65</a>, <a href="https://acikkuran.com/5/60">5\60</a>, <a href="https://acikkuran.com/62/5">62\5</a>, <a href="https://acikkuran.com/7/176">7\176</a> ayetlerinde farklı inançdakilere hayvan, eşek, köpek, domuz, pislik, maymun denilerek sövülmüştür. Bu bir çelişkidir.</p>
+<h2 id="allahın-velileri">Allah’ın velileri</h2>
+<p>Yunus-62 ayetinde Allah'ın velileri olduğu yazar.</p>
+<blockquote>
+<p>&quot;Gözünüzü açın! Allah'ın velileri için hiçbir korku yoktur. Tasaya da düşmezler onlar.&quot; <a href="https://acikkuran.com/10/62">10\62</a></p>
+</blockquote>
+<p>Bazı mealciler durumu kurtarmak için velinin çoğulu olan <code>evliya</code> sözcüğünü <code>dostlar</code> olarak çevirir. Oysaki bu sözcük, etik anlamda dostluğu değil siyasi bağlamda, yönetmeyi, korumayı, gözetilmeyi ifade eder.</p>
+<p>İsra-111 ayetinde ise Allah'ın veliye ihtiyacı olmadığı yazar. Bu bir çelişkidir.</p>
+<blockquote>
+<p>&quot;'Hamd, çocuk edinmeyen, mülkte ortağı olmayan, zillet ve acizliğin gerektirdiği bir <strong>veliye ihtiyacı bulunmayan Allah'a mahsustur</strong>' de ve O'nu tekbir ile yücelt.&quot; <a href="https://acikkuran.com/17/111">17\111</a></p>
+</blockquote>
+<h2 id="allah-tek-mi">Allah tek mi?</h2>
+<blockquote>
+<p>&quot;De ki; O Allah bir <strong>tektir</strong>.&quot; <a href="https://acikkuran.com/112/1">112\1</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;<strong>Yaratanların</strong> en iyisini bırakıp da Ba’l’e mi taparsınız?&quot; <a href="https://acikkuran.com/37/125">37\125</a></p>
+</blockquote>
+<p>Yaratanların en iyisi Allah’sa diğer yaratanlar kim?</p>
+<h2 id="allah-yardıma-muhtaç-mı">Allah yardıma muhtaç mı?</h2>
+<p>112/2 ayetinde Allah &quot;hiç bir şeye muhtaç değildir&quot; denirken Muhammed-7 ayetinde &quot;Allah’a yardım ederseniz O da size yardım eder&quot; denmektedir. Bu bir çelişkidir.</p>
+<blockquote>
+<p>&quot;Allah eksiksiz, sameddir (Bütün varlıklar O’na muhtaç, fakat O, hiç bir şeye muhtaç değildir)&quot; <a href="https://acikkuran.com/112/2">112\2</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Ey iman edenler! Eğer siz Allah’a yardım ederseniz O da size yardım eder, ayaklarınızı kaydırmaz.&quot; <a href="https://acikkuran.com/47/7">47\7</a></p>
+</blockquote>
+<h2 id="yer-ve-gök-kaç-günde-yaratılmıştır">Yer ve gök kaç günde yaratılmıştır?</h2>
+<ul>
+<li>
+<p>6 günde</p>
+<blockquote>
+<p><a href="https://acikkuran.com/7/54">7\54</a> <a href="https://acikkuran.com/10/3">10\3</a> <a href="https://acikkuran.com/11/7">11\7</a> <a href="https://acikkuran.com/25/59">25\59</a></p>
+</blockquote>
+</li>
+<li>
+<p>2 + 4 + 2 = 8 günde</p>
+<blockquote>
+<p>&quot;De ki: 'Siz mi <strong>yeri iki günde yaratanı</strong> inkar ediyor...'&quot; <a href="https://acikkuran.com/41/9">41\9</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;O, <strong>dört gün içinde, yeryüzünde yükselen sabit dağlar</strong> yarattı...&quot; <a href="https://acikkuran.com/41/10">41\10</a></p>
+</blockquote>
+<blockquote>
+<p><strong>Sonra duman halinde bulunan göğe yöneldi</strong>; ona ve yeryüzüne, &quot;İsteyerek veya istemeyerek gelin&quot; dedi. İkisi de, &quot;İsteyerek geldik&quot; dediler. <a href="https://acikkuran.com/41/11">41\11</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Böylece onları, <strong>iki günde yedi gök olarak</strong> yarattı ve her göğe kendi işini bildirdi. En yakın göğü kandillerle süsledik ve onu koruduk...&quot; <a href="https://acikkuran.com/41/12">41\12</a></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="musevilere-yahudi-denmesi">Musevilere &quot;Yahudi&quot; denmesi</h2>
+<blockquote>
+<p>&quot;<strong>Yahudilere</strong> tırnaklı hayvanların hepsini haram kıldık...&quot; <a href="https://acikkuran.com/6/146">6\146</a></p>
+</blockquote>
+<p>Kur’an’da Musevilerden Yahudi diye bahsediliyor. Halbuki o dönemde Yahudi olduğu halde Hristiyan olanlar çok. Madem ki &quot;Hristiyan&quot; yani &quot;İsacı&quot; diyor, &quot;Musevi&quot; yani &quot;Musacı&quot; da denebilirdi. Bu genelleme yanlıştır. Günümüzde de Yahudi olanlar içinde ateisti, dinsizi, Hristiyanı, Müslümanı, Budisti vardır.</p>
+<h2 id="inananlar-muhammedin-kulu-mu">İnananlar Muhammed’in kulu mu?</h2>
+<p>Zümer-10 ayetine bakalım</p>
+<blockquote>
+<p>&quot;De ki: 'Ey iman eden kullarım, Rabbinizden sakının. Bu dünyada iyilik edenler için bir iyilik vardır. Allah’ın arz’ı geniştir. Ancak sabredenlere ecirleri hesapsızca ödenir.'&quot; <a href="https://acikkuran.com/39/10">39\10</a></p>
+</blockquote>
+<p>Ayet, &quot;De ki ey inanan kullarım&quot; ile başlıyor. Muhammed, inananlara &quot;kullarım&quot; diye sesleniyor. Bazı meal tahrifatçıları bu hatayı kamufle edebilmek için mealin başın &quot;Bizim adımıza de ki&quot; ya da &quot;tarafımdan söyle&quot; gibi ilaveler yapmışlar. Halbuki Arapçasında bunlar yok. Bazıları da &quot;Kullarım&quot; değil, &quot;kullar&quot; olarak çevirmiş. Eğer Kur’an’ı Allah gönderseydi ayette Allah’ın &quot;de ki&quot; demeyip doğrudan kendisinin söylemesi gerekirdi. Ya da &quot;İnanan kullarıma de ki&quot; şeklinde olmalıydı.</p>
+<p>Aynı ifadeyi Zümer-53′de de görmekteyiz:</p>
+<blockquote>
+<p>De ki: &quot;Ey kendilerinin aleyhine aşırı giden kullarım! Allah'ın rahmetinden ümidinizi kesmeyin. Şüphesiz Allah, bütün günahları affeder. Çünkü O, çok bağışlayandır, çok merhamet edendir.&quot; <a href="https://acikkuran.com/39/53">39\53</a></p>
+</blockquote>
+<h2 id="cehennemin-yemeği">Cehennem'in yemeği</h2>
+<p>Gaşiye-6 ayetinde cehhennemde sadece dikenli bitki yeneceğini söylenirken Duhan-43 ayetinde Zakkum ağacı (dikensiz) yeneceğini söyler. Bu bir çelişkidir.</p>
+<blockquote>
+<p>&quot;Onlara, acı ve kötü kokulu bir <strong>dikenli bitkiden başka yiyecek yoktur</strong>.&quot; <a href="https://acikkuran.com/88/6">88\6</a></p>
+</blockquote>
+<blockquote>
+<p>&quot;Doğrusu (cehennemde) günahkarların yiyeceği zakkum ağacıdır; karınlarda suyun kaynaması gibi kaynayan, erimiş maden gibidir.&quot; <a href="https://acikkuran.com/44/42">44\42</a>, <a href="https://acikkuran.com/44/43">44\43</a>, <a href="https://acikkuran.com/44/44">44\44</a></p>
+</blockquote>
+<h1 id="namaz-ve-namaskar-benzerliği">Namaz ve Namaskar benzerliği</h1>
+<p>Namaz kelimesi Hindistan çıkışlı olup, Farsça’dan Türkçe’ye geçmiş bir kelimedir. Sanskritçe ve Hintçe’de “Namaste ya da Namaskar”; selamlama, eğilme, saygı ile eğilme, dua etme, yay halinde selamlama anlamlarına gelir. Sanskritçe, eski Hint dillerindendir. Yine Sanskritçe ve Hintçe’de “Surya-Namaskar” ise; Güneş’i selamlama, Güneş’e dua etme, Güneş’e eğilme, Güneş’e yay halinde saygı gösterme anlamlarına gelir. Surya Sanskritçe’de ve Veda dininin Tanrılarından Surya, Güneş anlamına gelmektedir.</p>
+<p><img src="https://www.mutlakbilim.net/wp-content/uploads/2018/01/surhnatassd32.jpg" alt="alt text" /></p>
+<p>Namaz kelimesinin Arapça’daki karşılığı “Salat”tır: Namaz ve salat aynı anlama gelmektedir. Salat; bağlanma, saygı sunma, dua etmek anlamlarına gelir. Namaskar, Hindistan’ın hemen batısında olan İran’daki Farsça’ya “Nomaz veya Nemaz” olarak geçmiştir. Nemaz, Mecusilerin “ateş önünde eğilme”si anlamına gelmektedir. 1038-1308 yılları arasındaki Selçuklular, Orta Asya ve Orta Doğu’ya hâkimdiler yanı sıra İran da toprakları içindeydi. Selçuklular’ın devlet dili Farsça idi, Farsça olan nemaz da ilerleyen zamanlarda Selçuklular ve Osmanlılar dönemlerinde Türkçe’ye “Namaz” olarak aktarılmıştır. Sanskritçe ve Farsça; Hint-Avrupa dil ailesindeki dillerdendir.</p>
+<p>İslam’daki namaz ile Hinduizm’deki yoga arasında benzerlikler görmekteyiz. Namaza en çok benzeyeni ise Surya Namaskar Yoga’sı yani Güneş’i Selamlama Yogası’dır. Namazda veya yogada, içe dönük ruhsal bir yolculuğa çıkılarak Tanrı veya Kurtuluş’a ulaşma hedeflenir. Peygamber olmadan önce ticaret ile uğraşan Muhammed, çeşitli yerlere yaptığı seyahatler sırasında Budist veya Hindu rahiplerle tanışmış ve onların inançlarındaki ritüellerini öğrenmiş olması, ihtimaller arasında bulunabilir. Muhammed ticaret ile uğraştığından birçok yere ticaret adına seyahate çıkmıştır, yaptığı Yemen seyahati sonrasında mağarada derin düşüncelere dalması ve buna derin düşünce yani tefekkur demesi, Hinduizm inancındaki meditasyona benzemektedir. Bazı Hintli kaynaklarda Yemen ve civarlarında kervan ticareti yapan ve orada bulunan bazı Hintli bilginlerle uzun sohbetler eden bir Arap’ın var olması, yanı sıra Hintli bilginler gittikten sonra bu kişinin onlardan aldığı dinsel bilgileri Arap tüccarlarına sorarak kayda geçirmiş olması bilgiler arasındadır.</p>
+<p>İslam’dan önce Namaz veya Namaz benzeri ibadet vardı. İslam inancında Hz. Muhammed Miraç’a yükseldiğinde namaz şekli değil namaz vakitleri 5 vakit olarak teyit edildi, bilgisi mevcuttur. Yani Kur’an veya Tanrı veya İslam dini, olmayan bir şeyi yapacaksınız değil, var olan namaz veya namaz benzeri ibadetlere devam edeceksiniz, demiştir.</p>
+<p>Kur’an’da doğrudan namaz nasıl kılınır anlatılmamakla birlikte; ayakta durarak, rükû ederek ve secdeye kapanarak namaz ibadetinde olması gerekenler vurgulanmıştır. Ayrıca; doğrudan 5 vakit vurgulanmamakla birlikte sabahtan geceye kadar belirli zamanlarda yaklaşık 3 veya 5 vakit olması yönünde vurgu yapılmıştır. İslam’daki namaz; ayakta durmak, elleri baş hizasında açmak, elleri ortada birleştirmek, rükû ve secde olarak genelde beş hareketten oluşur. Bu duruşlarda çeşitli dualar, ayetler veya sözcükler tekrarlanarak söylenir. Namaz, Kur’an’ın birçok yerinde geçmektedir ama İslam’ın 5 Şartı Kur’an’da yazmamaktadır; 5 Şart, Hz. Muhammed’in sözleri ve buna parelel olarak çeşitli hadisler sayesinde oluşturulmuştur, namaz da islamın 5 şartından biridir.</p>
+<p>Ek olarak, İslam’dan önceki Hindu/Vedik uygulamalarında günde 5 vakit/kere Namaskara ve/veya Nama-Yajna -kılınması- ritüeli vardı: Ritüel öncesi -abdestteki gibi- vücudun 5 beş farklı yeri suyla temizlenirdi.</p>
+<h1 id="kurana-neden-mi-inanmıyoruz">Kur'an'a neden mi inanmıyoruz?</h1>
+<ol>
+<li>Köleliği yasaklamıyor. (Bakara: 177-221), (Nisa: 24-25-36-92), (Maide: 89), (Tevbe: 60), (Nahl: 71-75), (Muminun: 5-6), (Nur: 33-58), (Ahzab: 26-50-52-55), (Mucadele: 3), (Mearic: 29-30), (İnsan: 8 ), (Beled: 12-13), (Rum: 28)</li>
+<li>Kadını dövmeyi emrediyor. (Nisa: 34)</li>
+<li>Dünyayı düz olarak tasvir ediyor. (Hicr: 15), (Ra’d: 3), (Kaf: 7), (Gâşiye: 20), (Şems: 6), (Naziat: 30), (İnşikak: 3), (Bakara: 22), (Nede: 6-7), (Zariyat: 48)</li>
+<li>Ayetlerde konuşanın kim olduğu belli değil. 3 ayrı özne var; Ben (Muhammed), O (Allah), Biz. (Hud: 2), (Zariyat: 51), (En’am: 114), (Hicr: 9), (Tekvir: 19-20), (Ahzab: 56) ???</li>
+<li>Spermin testiste oluştuğunu bilmiyor. (Tarık: 7)</li>
+<li>Her canlıyı çift yarattık diyor, bakterilerden haberi yok. (Zariyat: 49)</li>
+<li>Güneşin çamura battığını iddia ediyor. (Kehf: 86)</li>
+<li>Yıldızlar şeytanın atış tanesi diyor. (Mulk: 5)</li>
+<li>Kutuplar yok. En kuzey ve en güneyde oruç nasıl tutulabilir, bir malumat yok. (Bakara: 187)</li>
+<li>Milyonlarca yıl hüküm sürmüş dinozorlar yok ama deveden bahsediyor! (Gaşiye: 17)</li>
+<li>İnsansı canlılar olan Neanderthal yok ama olmayan melekler, şeytanlar ve cinler var. (Bakara: 102), (En’am: 8-9), (A’raf: 20)</li>
+<li>Beyin kelimesi yok. Beyin yerine düşünme organı olarak kalp anlatılıyor. (Muhammed: 24), (A’raf: 179), (Hacc 46), (Ali İmran: 119)</li>
+<li>Mirasta adaletsiz. (Nisa:11-12)</li>
+<li>Şahitlikte kadın ve erkeği bir tutmuyor. (Bakara: 228-282)</li>
+<li>Sadece Arap kavmi için yazılmıştır. (Fussilet: 44), (Yusuf: 2), (Şuara: 198-199), (Enam: 92)</li>
+<li>Peygamberin seks sırası anlatılıyor. (Ahzab: 51)</li>
+<li>Birçok ayet birbirini yalanlıyor. İlk müslümanın Muhammed, Musa ve İbrahim olduğuna dair ayrı ayrı ayetler var. Hangisi belli değil. (A’raf: 143), (En’am: 163), (Ali İmran: 67)</li>
+<li>El, ayak kesme, sopayla dövme gibi akıl almaz ceza yöntemleri öneriyor. (Maide: 33-38)</li>
+<li>Kelle kesmeyi emrediyor. (Muhammed: 4)</li>
+<li>Nerede bulursanız öldürün diyor. (Bakara: 191)</li>
+<li>Sadece Muhammed'e özel kadınlar listesi var. Müminlere 4 kadın, Muhammed'e sınır yok. (Ahzab: 50)</li>
+<li>Kadının cariye olmasına onay veriyor. (Mearic: 30), (Nisa: 24-25), (Muminun: 6), (Nur: 33)</li>
+<li>Ayetlerin bazılarında anlatım bozuklukları var. Haram davranışları sayarken &quot;anne babaya iyilik edin&quot; gibi pozitif cümleler var. ???</li>
+<li>Anlayasınız diye Arapça indirdik deniliyor. Arapça evrensel değil. (Yusuf: 2)</li>
+<li>&quot;Mekke ve civarı için indirdik&quot; diyen ayet de var evrensel diyen de... Kuran evrensel değil KAVİMSELDİR. (En’am: 92)</li>
+<li>Peygamberin öz amcası Ebu Leheb'e beddua ve hakaretler var ve bu namaz suresi... (Tebbet: 1-5)</li>
+<li>Peygamberin evinden misafir kovma ayeti var. (Ahzab: 53)</li>
+<li>Peygamber evlatlığı Zeyd'in karısını koynuna alabilsin diye ayet var. (Ahzab: 37)</li>
+<li>Evlenme yaşı için sınır yok. ???</li>
+<li>Sınırsız cariye helal. (Muminun: 6), (Nur: 32-33), (Ahzab: 50-52-55), (Mearic: 30)</li>
+<li>Ayetleri sorgulamayın diye ayet var. (Maide: 101)</li>
+<li>Dünyada haram ettiği zina ve içkiyi ahirette ödül olarak anlatıyor. (Bakara: 219), (Maide: 90-91), (Yunus: 4), (Nahl: 67), (Bakara: 25), (Ali İmran: 15), (Duhan: 54), (Tur: 20), (Rahman: 72), (Vakıa: 23), (Nebe: 33-34)</li>
+<li>Eşcinselleri lanetliyor. (Nisa: 15-16), (Araf: 80-81), (Hicr: 71), (Şuara: 165), (Neml: 55)</li>
+<li>Gayrimüslimlerin cennete girebileceği de söylenirken, başka ayette tam zıttı söyleniyor. (Bakara: 62), (Maide: 69), (Nur: 39), Hu: 15-16), (Tevbe: 17)</li>
+<li>Namazın nasıl kılınacağı anlatılmıyor. ???</li>
+<li>Tarihi bir olay anlatırken Meryem'leri karıştırıyor. Kur’an’da “Ey Harun’un kız kardeşi” diye hitap etmişlerdir. Halbuki bu iki Meryem birbirinden tamamen bağımsızdır. İsa’nın annesi olan Meryem’in Harun isminde bir kardeşi olmadığı gibi, bu iki Meryem’den ilki, diğerinden yaklaşık 1700 yıl önce yaşamıştır. (Meryem: 28)</li>
+<li>Lat, Menat ve Uzza isimli putları övüyor. (Necm: 19-20)</li>
+<li>Savaşa teşvik eden ayetler var. (Bakara: 190-193-216-244), (Ali İmran: 166), (Nisa: 71-72-76-84), (Enfal: 17-39-65), (Tevbe: 14-15-46-111-123), (Hac: 39), (Ahzab: 18-19), (Muhammed: 20), (Fetih: 11-16)</li>
+<li>Bir savaşta kaç müslümanın kaç kafire denk geldiğini anlatan ayeti hemen bir sonraki ayet yalanlıyor. (Enfal: 65-66)</li>
+<li>Kadına savaşta &quot;ganimet&quot; diyor. (Nisa: 4)</li>
+<li>&quot;Cahiliye dönemindeki gibi açılıp saçılmayın&quot; diye kadının özgürlüğünü kısıtlıyor. (Ahzab: 33)</li>
+<li>Ayın yarıldığını iddia ediyor. (Kamer: 1)</li>
+<li>Galaksiler yok. ???</li>
+<li>Evrenin nasıl oluştuğu tamamen yanlış anlatılıyor. ???</li>
+<li>Dünyanın oluşumu bilime taban tabana zıt…</li>
+<li>Güneş dünyanın etrafında döner diyor. (Enbiya/33)</li>
+<li>Allah pek çok ayette beddua ediyor, hatta bazılarında kendi kendine &quot;Allah onları kahretsin&quot; diyor. (Munafikun: 4), (Tevbe: 30)</li>
+<li>Kuran'da kadınlara hitap hiç yok. ???</li>
+<li>Bazı hayvanları hâkir görüyor ve kafirler için &quot;aşağılık maymunlar&quot; gibi çocukça hakaretler kullanıyor. (Bakara: 65), (Maide: 60)</li>
+<li>Muhammed tanrılaştırılıyor. (Ahzab: 56)</li>
+<li>Bir ayette ganimetlerin tamamı peygamberin diyor, cihatçılar savaşı reddedince &quot;ganimetlerin 5'te 1'i peygamberin&quot; ayeti geliyor. (Enfal: 1-41)</li>
+<li>Peygamberin küçük karısı Ayşe'nin zina yapıp yapmadığına dair ayetler var. Entrikalar ve dedikodular da unutulmamış. (Nur: 11-12-13-14-15)</li>
+<li>Evrim hiç yok. ???</li>
+<li>İçki konusunda önce olumlu sonra olumsuz ayet geliyor. (Nahl: 67), (Bakara: 219), (Maide: 90-91)</li>
+<li>Yahudi ve hristiyanları dost edinmemeyi emrediyor. (Maide: 51)</li>
+<li>Kadınlara &quot;TARLA&quot; diyor. (Bakara: 223)</li>
+<li>Peygamberler arasında fark olmadığını söyleyen ayet ve Muhammed'in en değerli peygamber olduğunu söyleyen başka bir ayet var.</li>
+<li>İyilik ve kötülüğün Allah'tan geldiğini söylüyor, sonra iyilik Allah'tan kötülük senden diyor.</li>
+<li>Uzaya çıkmayı imkansız görüyor. (Rahman: 33)</li>
+<li>Ay'ı nur kaynağı olarak nitelendiriyor, güneşin ışığını yansıttığını bilmiyor. (Yunus: 5), (Nuh: 16)</li>
+<li>Büyük patlama ile ilgili hiçbir bilgi geçmiyor. ???</li>
+<li>Köleyle hür bir tutulur mu, diye insanları ayrıştırıyor. (Nahl: 75)</li>
+<li>Konuşan karınca, ejderha, vs masalsı anlatımları var. (Neml: 18), (Araf: 107)</li>
+<li>İblis için bir ayette melek, diğerinde cin diyor. (Kehf: 50), (Bakara: 34)</li>
+<li>Mahşerde Allah şefaat etmez diyen ayet de var, eder diyen de. (Bakara: 48), (Zuhruf: 86), (Necm: 26), (Zümer: 43)</li>
+<li>Hayvan, bitki, coğrafi şekil ve besinler Ortadoğu’ya özgü. ???</li>
+<li>Bir ayette vasiyet şart, diğerinde değil. (Bakara: 180),</li>
+<li>Allah, Muhammed'e salat ediyor. (Ahzab: 56)</li>
+<li>Kıble önce Kudüs'ken Yahudiler itiraz ettikten sonra Kabe oluyor. (Bakara: 144)</li>
+<li>Cehennemde Ebu Cehil'e düello teklif ediliyor. (Alak: 13-19)</li>
+<li>Rahman suresinin 31 ayeti plak takılmış gibi aynı cümleyi yazıyor. (Özellikle bakınız..)</li>
+<li>Her şeyi bilen Allah kıyamet saatini meleklerden öğreniyor.</li>
+<li>Cennette kadınlar için vadedilen hiçbir şey yok. ???</li>
+<li>Hayvanları yük taşıma, öldürüp yeme ve ulaşım aracı olarak görüyor, evrimden alakasız.</li>
+<li>Bazı ayetler daha Muhammed zamanında hükmünü yitiriyor ama hala duruyor.</li>
+<li>Peygambere soru sormak için sadaka vermek emrediliyor. (Mücadele: 12)</li>
+<li>Cennetin genişliği ayetlerde farklı anlatılıyor. (Hadid: 21), (Ali İmran: 133)</li>
+<li>Dünya kainattan daha önce yaratıldı diyor. (Fussilet: 9-12)</li>
+<li>Rüzgar olmasa gemiler durur diyor. (Şura: 33)</li>
+<li>Boşanma konusunda kadını 3 kez boşayıp başkasıyla evlendirip boşarsan tekrar sana helaldir gibi garip bir mantığa sahip. (Bakara: 230)</li>
+<li>Göklerle yer bitişikken onları ayırdığını iddia ediyor. (Enbiya: 30)</li>
+<li>Diğer kitaplar gibi varlığına kanıt olmayan Nuh'un gemisi efsanesini anlatıyor. (Muminun: 27), (Hud: 37-38-42-44), (Araf: 64), (Yunus: 73), (Şuara: 119), (Ankebut: 15-65)</li>
+<li>Mekke'de ayetler barışçılken Medine'de Muhammed güçlenince vahşi ayetler geliyor. (Kafirun: 6), (Tevbe: 29)</li>
+<li>Muhammed'in &quot;sapık&quot; olmadığını savunan ayet var. (Araf: 61)</li>
+<li>Gece ve gündüz bilimsellikten çok uzak anlatılıyor.</li>
+<li>Mikail'in meteorolojiden sorumlu olduğu söyleniyor ama trilyonlarca gezegen var.</li>
+<li>Tatlı suda mercan ve inci yetişebileceği anlatılıyor. (Rahman: 19-22)</li>
+<li>Tevrat'tan alıntılar yapılırken hata yapılmış, Zebur kitap zannediliyor. (Kuran/Maide: 45 - Tevrat/Mısırdan çıkış: 21:23.25), (Kuran/Enbiya: 105 – Tevrat/Mezmurlar: 37:29), (Kuran/Araf: 40 – İncil/ Matta 19:24–Markos 10:25–Luka 18:25), (Kuran/Ali İmran: 93 – Tevrat/Yaratılış Bölümü 32:22.31), (Kuran/Hicr: 9 – Tevrat/Yeşaya: 40/8 – İncil/Matta: 5-18)</li>
+<li>Cennet sadece erkeklere özgü bir harem gibi anlatılıyor.</li>
+<li>Allah'ın bazı insanlara hidayet vermediği ve onları yakacağı söyleniyor.</li>
+<li>Göğün yere düşmemesi için tutulduğu yazıyor. (Hacc: 65)</li>
+<li>Nisa 11-12 ayetlerinde matematik hesap hatası yapılıyor.</li>
+<li>Güneşin sıradan bir yıldız olduğu bilinmiyor.</li>
+<li>Bilimselliğe ters olarak her şey insan için yaratıldı mantığı var.</li>
+<li>Cinlerden bahsediyor, varlıklarına dair hiçbir bilimsel delil yok.</li>
+<li>Allah bazı ayetlerde pazarlık yapıyor.</li>
+<li>Hırsızlık haram ama savaşta ele geçirilenlerin yağmalanması helal. (Maide: 38), (Nisa: 24)</li>
+<li>Nisa 23 ensesti yasaklıyor, Ahzab 50 sadece peygambere izin veriyor.</li>
+<li>Kuran'da &quot;AŞK&quot; kelimesi hiç geçmiyor.
+Kaynak: KURAN</li>
+</ol>
+<h1 id="kuran-incil-ve-tevrat-çelişkileri">Kur'an, İncil ve Tevrat çelişkileri</h1>
+<h2 id="kuran-ve-incil">Kur’an ve İncil</h2>
+<ol>
+<li>İsa bebekken, İncil’e göre mucize göstermemiş, Kur’an’a göre göstermiştir. Konuşmuş ve peygamber olduğunu söylemiştir.</li>
+<li>İsa, İncil’e göre çarmıha gerilmiştir. Kur’an’a göre çarmıha gerilen İsa değil, İsa’ya benzeyen başka biridir.</li>
+<li>Kur’an’a göre İncil’de Ahmet’den bahseder, İncil’de Ahmet ismi geçmez.</li>
+<li>Şeytan, İncil’e göre melek, Kur’an’a göre cindir.</li>
+<li>Şeytan, İncil’e göre Tanrı ile aynı mertebeye ulaşmak istediği için, Kur’an’a göre ise Adem’e secde etmediği için lanetlenmiştir.</li>
+<li>İncil’e göre iyilikler Tanrıdan kötülük şeytandan, Kur’an’a göre hayır da şer de Allah’tandır.</li>
+<li>İncil’de bir aziz olarak geçen Yahya’nın babası Zekeriya, Kur’an’da peygamber olarak geçer. Buna karşın Tevrat’taki Zekeriya peygamberden hiç bahsedilmez.
+Yani Kur’an’da Meryem’ler karıştırıldığı gibi, Zekeriya’lar da karıştırılmıştır.</li>
+</ol>
+<h2 id="kuran-ve-tevrat">Kur'an ve Tevrat</h2>
+<ol>
+<li>İbrahim’in babasının adı; Tevrat’a göre Tarah, Kur’an’a göre Azer.</li>
+<li>İbrahim’in kurban etmek istediği oğlu; Tevrat’a göre İshak, Kur’an’a göre İsmail.</li>
+<li>İsmail Tevrat’a göre peygamber değil, Kur’an’a gore peygamber.</li>
+<li>Süleyman; Tevrat’a göre kral, Kur’ana göre peygamber.</li>
+<li>Davud; Tevrat’a göre kral, Kur’ana göre peygamber.</li>
+<li>Cennette Havva’yı aldatan Tevrat’ta yılan, Kur’an’da şeytan.</li>
+<li>Tufan Tevrat’a göre tüm dünyaya, Kur’ana göre sadece Nuh’un kavmine.</li>
+<li>Nuh’un gemisi; Tevrat’a göre Ararat dağına, Kur’an’a göre Cudi dağına.</li>
+<li>Haman; Tevrat’ta Pers kralının yardımcısı, Kur’ana göre firavunun taş ustası.
+10.Tanrının adı; Tevrat’ta YHWH, Kur’an’da Allah.</li>
+<li>Tevrat’a göre insan, tanrının suretinde yaratılmıştır. ani tanrı, insanın en mükemmel halidir. Ama Kur’an’a göre Allah’ın eşi.benzeri yoktur.</li>
+<li>Putlara tapmadığı için ateşe atılan; Tevrat’ta 3 Yahudi, Kur’an’da İbrahim.</li>
+<li>İmran; Tevrat’a göre Musa’nın babası, Kur’an’a göre İsa’nın dedesi.</li>
+<li>Savaşa giderken, dizlerinin üzerine çökerek su içen askerlerin komutanı Tevrat’a göre Gideon, Kur’an’a göre Talut.</li>
+</ol>
+<h1 id="namaz-ve-namaskar-benzerliği">Namaz ve Namaskar benzerliği</h1>
+<h2 id="surya-namaskar">Surya Namaskar</h2>
+<p>Surya Namaskar, Hinduizm inancındaki yoga içerisindeki asanalar yani fiziksel duruşlarla alakalı bir tapınım veya ibadettir. Düşünce, nefes kontrolü ve fiziksel duruş eşliğinde Tanrı’ya ya da Tanrılara veya Aydınlık’a ya da Kurtuluş’a ulaşmak için bu duruşlar sırasında mantralar ya da dualar tekrarlanarak söylenmektedir. Surya Namaskar ilk olarak MÖ 1500-1200 yıllarında yazılmış olan Hindu kutsal metinleri arasında bulanan Rig-Veda’da geçmektedir. Bu tarihlerde Güneş Tanrısı olan “Surya”ya farklı duruşlarla yay şeklinde selamlama veya dua etme anlamını taşımaktadır. Bu dönemlerde ve devam eden Hinduizm dönemlerinde; MÖ 800-400’lerde Upanişad yazıtlarında, MÖ 500-300’lerde Bhagavad-Gita metinlerinde, MÖ 300-200’lerde Patanjali’nın Yoga Sutra’ları adlı eserinde yoga külliyatı çerçevesinde çeşitli ahlaki değerler, mantralar-dualar, düşünme teknikleri – meditasyon, nefes kontrolleri, fiziksel duruşlar ve hareketler kapsamlıca ve fazlaca anlatılmaktadır. Yüzlerce fiziksel duruş (asana) Hindu kutsal metinlerinde tespit edilmiştir. Ayrıca Surya Namaskar’ın yanı sıra Chandra Namaskar yani Ay’ı Selamlama gibi ibadetler de bulunmaktadır.</p>
+<p>Surya Namaskar ibadetinde 7 farklı duruş pozisyonu vardır: Toplamda 5’i ikişer kere, 2’si birer kere olmak üzere 12 hareket yapılır. Bu hareketlerin yapıldığı sırada şu mantralar tekrarlanarak söylenmektedir;</p>
+<ol>
+<li>Om Mitrāya Namaha - Her şeyin dostu Olana Selam</li>
+<li>Om Ravaye Namaha - Parlayana Selam</li>
+<li>Om Suryaya Namaha - Eylemi Verene Selam</li>
+<li>Om Bhanave Namaha - Aydınlatana Selam</li>
+<li>Om Khagaya Namaha - Gökyüzünde Hareket Edene Selam</li>
+<li>Om Pushne Namaha - Güç ve Gıda Verene Selam</li>
+<li>Om Hiranya Garbhaya Namaha - Altuni Evrensel Öze Selam</li>
+<li>Om Marichaya Namaha - Güneşin Işınlarına Selam</li>
+<li>Om Adityaya Namaha - Aditi (Kozmik anne)’nin oğlu Güneşe Selam</li>
+<li>Om Savitre Namaha - Güneşin Harekete Geçirici Gücüne Selam</li>
+<li>Om Arkaya Namaha - Övülmeye Layık Olana Selam</li>
+<li>Om Bhaskaraya Namaha - Aydınlanmaya Yol Açana Selamv</li>
+</ol>
+<p>Surya Namaskara hareketleri</p>
+<p><img src="https://www.mutlakbilim.net/wp-content/uploads/2018/01/cesitlidser.jpg" alt="alt text" /></p>
+<p>Hinduizm külliyatı inançlarında Güneş’e karşı durularak, günde bir kere veya günün belirli bölümlerinde yapılmak suretiyle, farklı duruşlar sırasında tekrarlanan mantralar veya dualar eşliğinde Surya Namaskar ibadeti, eski tarihlerden günümüze kadar ulaşmayı başarmıştır.</p>
+<h2 id="vardığım-sonuç">Vardığım sonuç</h2>
+<p>Günümüz namaz ibadetinin kökenleri (en azından öncüllerinden ve kökenlerinden birisi) Hinduizm inançlarına dayanmakta olup Hindu inançlarıyla etkileşime girmiş olması muhtemel gözükmektedir.</p>
+<p>Nitekim:<br />
+• İslam’dan önce Hindu İmparatorluğu’nun hüküm sürdüğü yerler arasında Arabistan’ın da olması ve oluşacak inanç etkileşimleri.<br />
+• İran’ın Farsça dili ile Hindistan’ın Sanskritçe dili, Hint-Avrupa dil ailesi içinde yer alan dillerdendir ve birbiriyle etkileşim halinde olmuşlardır. İran ya da Perslerin, Hindistan ve inançlarıyla etkileşim halinde iç içe olması, İran’ın Farsça dilindeki birçok kelimenin Hint dili olan Sanskritçe’den gelmesi, İran bünyesinde ~MÖ 850 ve MS 650 yıllarında Persler, Medler, Ahamenişler ve Sasaniler gibi etkili olmuş İran halkları veya imparatorlukları, Arabistan’a yakın olduklarından Araplarla inanç etkileşimine girmiş olduğunu göstermektedir.<br />
+• Hinduizm ve özellikle Budizm öğrencilerinin Arabistan dâhil olmak üzere Asya’nın çoğu yerine dinsel inançlarını yaydıkları bilinmektedir.<br />
+• Muhammed’in ticaret ile uğraşması, ticaret yapmak için Suriye, Yemen, Arabistan Yarımadası ve yukarısına yaptığı seyahetler sırasında farklı inançlarla tanışmasını ve çeşitli kültürleri öğrenmesini bilmekteyiz.<br />
+• ~MÖ 500 ve MS 1100 tarihlerindeki “Baharat Yolu” ve ~MÖ 200 ve MS 1400 tarihlerindeki “İpek Yolu” güzergâhı üzerinde Hindistan ve Arabistan’ın da bulunması sonucunda buradaki toplumlar ticaret, kültür ve din gibi alışverişler yapmışlardır.</p>
+<p><img src="https://www.mutlakbilim.net/wp-content/uploads/2018/01/suryanamaskarahindarian.jpg" alt="alt text" /></p>
+<p>Yoga Hareketlerinden Birkaçı. BETÜL, Sabiha. “Huzura Sekiz Adım: Yama-Niyama-Asana”, s. 50, 64. Çizim © Sabiha Betül (Ek Düzenleme: A. Çadıroğlu)</p>
+<p>İşte bu sebeplerden dolayı, Hinduizm ile İslam’ın birtakım temel özelliklerinin birbirine benzediğini görürüz örneğin;</p>
+<p>• İslam’daki Kabe tapınağının, Hinduizm’deki Garbha ve Kapilash tapınaklarına benzemesi
+• İslam’daki Kabe’de bulunan siyah kutsal taş Hacer-ül Esved’in, Hinduizm’deki tapınaklarda bulunan Shiva Lingam veya Shangay Ashweta adlı siyah kutsal taşa benzemesi<br />
+• İslam’daki Namaz ibadetinin, Hinduizm’deki yoga içerisindeki Namaskar ibadetine benzediğini kaynaklar bize göstermektedir. Şu an Hindistan’a gitsek bunları bir bir görürüz.</p>
+<p>İslam’daki bu 3 unsurun, Hinduizm’deki bu 3 unsurdan etkilendiği muhtemel gözükmektedir.</p>
+<p>Tabii.­.. Hayvanlar arasında güçlü veya önder olanın önünde başını yere eğme figürü, senin gücünü kabul ettim manasına gelmektedir. Homo sapiens’in (İlk İnsanların – 200 bin yıl önce) oluşumundan bu yana ve/veya tarıma geçiş (∼10 bin yıl önce) öncesinde ve sonrasında insanlar; anne-babalarının önünde, grup liderine, krallara, firavunlara, hükümdarlara veya Tanrılara saygı mahiyetinde alnını yere değdirerek eğilme olarak yapılan tavırlar tabii ki namazın gerçek kökenidir. Bununla beraber -veya sonrasında- İslam dininden önce, namaz benzeri Tanrılara dua etme Sümer-Babil-Mısır külliyatında da var olmakla birlikte, MÖ 1500’lerde Hinduizm’de Surya Namaskar olarak Güneş Tanrısı’na yapılan namaz benzeri ibadet, MÖ 300’lerde Sabiilerdeki kuzeye dönülüp günde 7 kere yapılan namaz benzeri ibadet namazın oluşumunda etkili olmuştur diyebiliriz. Bu sayılanlar arasında Hinduizm inançlarının namaza etkisi daha fazla gibi gözükmektedir.</p>
+<h2 id="ilgili-kuran-ayeti">İlgili Kur’an ayeti</h2>
+<blockquote>
+<p>Namazı bitirdiğinizde, Allah’ı ayaktayken, otururken ve yan yatarken zikredin. Artık ‘güvenliğe kavuşursanız’ namazı dosdoğru kılın. Çünkü namaz, mü’minler üzerinde vakitleri belirlenmiş bir farzdır. Nisa-103</p>
+</blockquote>
+
+</article>
+
+</body>
+</html>
