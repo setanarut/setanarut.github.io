@@ -586,56 +586,58 @@ Yani Kur'an'da Meryem'ler karıştırıldığı gibi, Zekeriya'lar da karıştı
 
 # Namaz ve Namaskar benzerliği
 
+"Namaskar" (नमस्कार) terimi, Hintçe ve Sanskrit dahil olmak üzere çeşitli Hint dillerinde kullanılan bir selamlamadır. İki kelimenin birleşimidir: "Namaḥ" (नमः) ve "kāraḥ" (कारः). "Namaḥ" kelimesi, "eğilmek" veya "saygı göstermek" anlamına gelen Sanskritçe "Nam" (नम्) kökünden türemiştir. Saygı, hürmet ve teslimiyet eylemini ifade eder. "-kāraḥ" eki bir eylemi veya yapma eylemini belirtir.
+
+Bu nedenle, "Namaskar" eğilme, saygı gösterme ve hürmet gösterme eylemi veya hareketi olarak anlaşılabilir. Birini selamlamanın, iyi niyeti ifade etmenin ve hürmet göstermenin resmi ve kibar bir yoludur. Namaskar, Hint kültüründe ve geleneklerinde derin köklere sahiptir ve çeşitli sosyal, dini ve manevi bağlamlarda kullanılır. Alçakgönüllülük, birlik ve tüm varlıkların birbirine bağlılığını kabul etme değerlerini bünyesinde barındırır.
+
+Yoga'da Surya Namaskar, Güneş tanrısı olan Surya'ya farklı duruşlarla yay şeklinde selamlama veya dua etme anlamını taşımaktadır. Chandra Namaskar yani Ay'ı Selamlama gibi farklı çeşitleri de vardır.
+
 ## Surya Namaskar
 
-Surya Namaskar, Hinduizm inancındaki yoga içerisindeki asanalar yani fiziksel duruşlarla alakalı bir tapınım veya ibadettir. Düşünce, nefes kontrolü ve fiziksel duruş eşliğinde Tanrı'ya ya da Tanrılara veya Aydınlık'a ya da Kurtuluş'a ulaşmak için bu duruşlar sırasında mantralar ya da dualar tekrarlanarak söylenmektedir. Surya Namaskar ilk olarak MÖ 1500-1200 yıllarında yazılmış olan Hindu kutsal metinleri arasında bulanan Rig-Veda'da geçmektedir. Bu tarihlerde Güneş Tanrısı olan “Surya”ya farklı duruşlarla yay şeklinde selamlama veya dua etme anlamını taşımaktadır. Bu dönemlerde ve devam eden Hinduizm dönemlerinde; MÖ 800-400'lerde Upanişad yazıtlarında, MÖ 500-300'lerde Bhagavad-Gita metinlerinde, MÖ 300-200'lerde Patanjali'nın Yoga Sutra'ları adlı eserinde yoga külliyatı çerçevesinde çeşitli ahlaki değerler, mantralar-dualar, düşünme teknikleri – meditasyon, nefes kontrolleri, fiziksel duruşlar ve hareketler kapsamlıca ve fazlaca anlatılmaktadır. Yüzlerce fiziksel duruş (asana) Hindu kutsal metinlerinde tespit edilmiştir. Ayrıca Surya Namaskar'ın yanı sıra Chandra Namaskar yani Ay'ı Selamlama gibi ibadetler de bulunmaktadır.
+Surya Namaskar, Hinduizm inancındaki yoga içerisindeki asanalar yani fiziksel duruşlarla alakalı bir tapınım veya ibadettir. Düşünce, nefes kontrolü ve fiziksel duruş eşliğinde tanrıya, aydınlığa ya da kurtuluşa ulaşmak için bu duruşlar sırasında mantralar ya da dualar tekrarlanarak söylenmektedir. Surya Namaskar ilk olarak MÖ 1500-1200 yıllarında yazılmış olan Hindu kutsal metinleri arasında bulanan Rig-Veda'da geçmektedir. Bu tarihlerde Güneş Tanrısı olan Surya'ya farklı duruşlarla yay şeklinde selamlama veya dua etme anlamını taşımaktadır. Bu dönemlerde ve devam eden Hinduizm dönemlerinde; MÖ 800-400'lerde Upanişad yazıtlarında, MÖ 500-300'lerde Bhagavad-Gita metinlerinde, MÖ 300-200'lerde Patanjali'nın Yoga Sutra'ları adlı eserinde yoga külliyatı çerçevesinde çeşitli ahlaki değerler, mantralar-dualar, düşünme teknikleri – meditasyon, nefes kontrolleri, fiziksel duruşlar ve hareketler kapsamlıca ve fazlaca anlatılmaktadır. Yüzlerce fiziksel duruş (asana) Hindu kutsal metinlerinde tespit edilmiştir.
 
 Surya Namaskar ibadetinde 7 farklı duruş pozisyonu vardır; Toplamda 5'i ikişer kere, 2'si birer kere olmak üzere 12 hareket yapılır. Bu hareketlerin yapıldığı sırada şu mantralar tekrarlanarak söylenmektedir;
 
-1. Om Mitrāya Namaha - Her şeyin dostu Olana Selam
-2. Om Ravaye Namaha - Parlayana Selam
-3. Om Suryaya Namaha - Eylemi Verene Selam
-4. Om Bhanave Namaha - Aydınlatana Selam
-5. Om Khagaya Namaha - Gökyüzünde Hareket Edene Selam
-6. Om Pushne Namaha - Güç ve Gıda Verene Selam
-7. Om Hiranya Garbhaya Namaha - Altuni Evrensel Öze Selam
-8. Om Marichaya Namaha - Güneşin Işınlarına Selam
-9. Om Adityaya Namaha - Aditi (Kozmik anne)'nin oğlu Güneşe Selam
-10. Om Savitre Namaha - Güneşin Harekete Geçirici Gücüne Selam
-11. Om Arkaya Namaha - Övülmeye Layık Olana Selam
-12. Om Bhaskaraya Namaha - Aydınlanmaya Yol Açana Selamv
+![Surya Namaskara hareketleri](https://www.mutlakbilim.net/wp-content/uploads/2018/01/cesitlidser.jpg)
 
-Surya Namaskara hareketleri
-
-![alt text](https://www.mutlakbilim.net/wp-content/uploads/2018/01/cesitlidser.jpg)
-
+1. Om Mitrāya Namaha - Her şeyin dostu olana Selam
+2. Om Ravaye Namaha - Parlayana selam
+3. Om Suryaya Namaha - Eylemi verene selam
+4. Om Bhanave Namaha - Aydınlatana selam
+5. Om Khagaya Namaha - Gökyüzünde hareket edene selam
+6. Om Pushne Namaha - Güç ve gıda verene selam
+7. Om Hiranya Garbhaya Namaha - Altuni evrensel öze selam
+8. Om Marichaya Namaha - Güneşin ışınlarına selam
+9. Om Adityaya Namaha - Aditi'nin (kozmik anne) oğlu Güneş'e selam
+10. Om Savitre Namaha - Güneşin harekete geçirici gücüne selam
+11. Om Arkaya Namaha - Övülmeye layık olana selam
+12. Om Bhaskaraya Namaha - Aydınlanmaya yol açana selam
 
 Hinduizm külliyatı inançlarında Güneş'e karşı durularak, günde bir kere veya günün belirli bölümlerinde yapılmak suretiyle, farklı duruşlar sırasında tekrarlanan mantralar veya dualar eşliğinde Surya Namaskar ibadeti, eski tarihlerden günümüze kadar ulaşmayı başarmıştır.
 
 ## Vardığım sonuç
 
-Günümüz namaz ibadetinin kökenleri (en azından öncüllerinden ve kökenlerinden birisi) Hinduizm inançlarına dayanmakta olup Hindu inançlarıyla etkileşime girmiş olması muhtemel gözükmektedir.
+Günümüz namaz ibadetinin kökenleri Hinduizm inançlarına dayanmakta olup Hindu inançlarıyla etkileşime girmiş olması muhtemel gözükmektedir.
 
 Nitekim; 
 • İslam'dan önce Hindu İmparatorluğu'nun hüküm sürdüğü yerler arasında Arabistan'ın da olması ve oluşacak inanç etkileşimleri.  
-• İran'ın Farsça dili ile Hindistan'ın Sanskritçe dili, Hint-Avrupa dil ailesi içinde yer alan dillerdendir ve birbiriyle etkileşim halinde olmuşlardır. İran ya da Perslerin, Hindistan ve inançlarıyla etkileşim halinde iç içe olması, İran'ın Farsça dilindeki birçok kelimenin Hint dili olan Sanskritçe'den gelmesi, İran bünyesinde ~MÖ 850 ve MS 650 yıllarında Persler, Medler, Ahamenişler ve Sasaniler gibi etkili olmuş İran halkları veya imparatorlukları, Arabistan'a yakın olduklarından Araplarla inanç etkileşimine girmiş olduğunu göstermektedir.  
+• İran'ın Farsça dili ile Hindistan'ın Sanskrit dili, Hint-Avrupa dil ailesi içinde yer alan dillerdendir ve birbiriyle etkileşim halinde olmuşlardır. İran ya da Perslerin, Hindistan ve inançlarıyla etkileşim halinde iç içe olması, İran'ın Farsça dilindeki birçok kelimenin Hint dili olan Sanskritçe'den gelmesi, İran bünyesinde ~MÖ 850 ve MS 650 yıllarında Persler, Medler, Ahamenişler ve Sasaniler gibi etkili olmuş İran halkları veya imparatorlukları, Arabistan'a yakın olduklarından Araplarla inanç etkileşimine girmiş olduğunu göstermektedir.  
 • Hinduizm ve özellikle Budizm öğrencilerinin Arabistan dâhil olmak üzere Asya'nın çoğu yerine dinsel inançlarını yaydıkları bilinmektedir.  
 • Muhammed'in ticaret ile uğraşması, ticaret yapmak için Suriye, Yemen, Arabistan Yarımadası ve yukarısına yaptığı seyahetler sırasında farklı inançlarla tanışmasını ve çeşitli kültürleri öğrenmesini bilmekteyiz.  
 • ~MÖ 500 ve MS 1100 tarihlerindeki “Baharat Yolu” ve ~MÖ 200 ve MS 1400 tarihlerindeki “İpek Yolu” güzergâhı üzerinde Hindistan ve Arabistan'ın da bulunması sonucunda buradaki toplumlar ticaret, kültür ve din gibi alışverişler yapmışlardır.
 
-![alt text](https://www.mutlakbilim.net/wp-content/uploads/2018/01/suryanamaskarahindarian.jpg)
-
-Yoga Hareketlerinden Birkaçı. BETÜL, Sabiha. “Huzura Sekiz Adım; Yama-Niyama-Asana”, s. 50, 64. Çizim © Sabiha Betül (Ek Düzenleme; A. Çadıroğlu)
+![Yoga hareketlerinden bazıları](https://www.mutlakbilim.net/wp-content/uploads/2018/01/suryanamaskarahindarian.jpg)
 
 İşte bu sebeplerden dolayı, Hinduizm ile İslam'ın birtakım temel özelliklerinin birbirine benzediğini görürüz örneğin;
 
+• Kabe etrafında dönme ritüelinin ters yöne olacak şekilde Hinduizm'de de olması (Tapınak etrafında)
 • İslam'daki Kabe tapınağının, Hinduizm'deki Garbha ve Kapilash tapınaklarına benzemesi
 • İslam'daki Kabe'de bulunan siyah kutsal taş Hacer-ül Esved'in, Hinduizm'deki tapınaklarda bulunan Shiva Lingam veya Shangay Ashweta adlı siyah kutsal taşa benzemesi  
 • İslam'daki Namaz ibadetinin, Hinduizm'deki yoga içerisindeki Namaskar ibadetine benzediğini kaynaklar bize göstermektedir. Şu an Hindistan'a gitsek bunları bir bir görürüz.
 
 İslam'daki bu 3 unsurun, Hinduizm'deki bu 3 unsurdan etkilendiği muhtemel gözükmektedir.
 
-Tabii.­.. Hayvanlar arasında güçlü veya önder olanın önünde başını yere eğme figürü, senin gücünü kabul ettim manasına gelmektedir. Homo sapiens'in (İlk İnsanların – 200 bin yıl önce) oluşumundan bu yana ve/veya tarıma geçiş (∼10 bin yıl önce) öncesinde ve sonrasında insanlar; anne-babalarının önünde, grup liderine, krallara, firavunlara, hükümdarlara veya Tanrılara saygı mahiyetinde alnını yere değdirerek eğilme olarak yapılan tavırlar tabii ki namazın gerçek kökenidir. Bununla beraber -veya sonrasında- İslam dininden önce, namaz benzeri Tanrılara dua etme Sümer-Babil-Mısır külliyatında da var olmakla birlikte, MÖ 1500'lerde Hinduizm'de Surya Namaskar olarak Güneş Tanrısı'na yapılan namaz benzeri ibadet, MÖ 300'lerde Sabiilerdeki kuzeye dönülüp günde 7 kere yapılan namaz benzeri ibadet namazın oluşumunda etkili olmuştur diyebiliriz. Bu sayılanlar arasında Hinduizm inançlarının namaza etkisi daha fazla gibi gözükmektedir.
+Tabii.­.. Hayvanlar arasında güçlü veya önder olanın önünde başını yere eğme figürü, senin gücünü kabul ettim manasına gelmektedir. Homo sapiens'in (İlk İnsanların – 200 bin yıl önce) oluşumundan bu yana ve/veya tarıma geçiş (∼10 bin yıl önce) öncesinde ve sonrasında insanlar anne-babalarının önünde, grup liderine, krallara, firavunlara, hükümdarlara veya tanrılara saygı mahiyetinde alnını yere değdirerek eğilme olarak yapılan tavırlar tabii ki namazın gerçek kökenidir. Bununla beraber veya sonrasında İslam dininden önce, namaz benzeri Tanrılara dua etme Sümer-Babil-Mısır külliyatında da var olmakla birlikte, MÖ 1500'lerde Hinduizm'de Surya Namaskar olarak Güneş Tanrısı'na yapılan namaz benzeri ibadet, MÖ 300'lerde Sabiilerdeki kuzeye dönülüp günde 7 kere yapılan namaz benzeri ibadet namazın oluşumunda etkili olmuştur diyebiliriz. Bu sayılanlar arasında Hinduizm inançlarının namaza etkisi daha fazla gibi gözükmektedir.
 
 ## İlgili Kur'an ayeti
 
